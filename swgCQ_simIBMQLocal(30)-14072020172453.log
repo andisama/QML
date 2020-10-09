@@ -1,0 +1,1353 @@
+[Quantum Machine Learning for Image Classification]
+(Transfer Learning: base model is a pretrained resnet-18 (classical), then retrain the fc-layer (quantum) only)
+- @Andi Sama, 2020
+- Sinergi Wahana Gemilang
+- Tools: Python, QML:PennyLane.ai, Quantum Simulator & HW: IBM Q on Cloud, ML-Framework: Pytorch
+- Creating log file:14/07/2020 17:24:53
+- Target model name: swgCQ_simIBMQLocal(30)-14072020172453.pth
+- Selected quantum device backend: Qiskit PennyLane plugin
+Short name: qiskit.aer
+Package: pennylane_qiskit
+Plugin version: 0.9.0
+Author: Xanadu
+Wires: 4
+Shots: 1024
+
+* Processing device: cpu
+* Loading pre-trained resnet-18...
+  - Replacing last layer (fc-layer) with Quantum Layer...
+* (START re-training the Quantum Layer)
+  => Training Started.
+     > Phase: train Epoch: 1/30 Iter: 1/31 Batch time: 13.5433
+     > Phase: train Epoch: 1/30 Iter: 2/31 Batch time: 13.1988
+     > Phase: train Epoch: 1/30 Iter: 3/31 Batch time: 12.9905
+     > Phase: train Epoch: 1/30 Iter: 4/31 Batch time: 13.2734
+     > Phase: train Epoch: 1/30 Iter: 5/31 Batch time: 14.7840
+     > Phase: train Epoch: 1/30 Iter: 6/31 Batch time: 13.4425
+     > Phase: train Epoch: 1/30 Iter: 7/31 Batch time: 13.3261
+     > Phase: train Epoch: 1/30 Iter: 8/31 Batch time: 13.9056
+     > Phase: train Epoch: 1/30 Iter: 9/31 Batch time: 13.2372
+     > Phase: train Epoch: 1/30 Iter: 10/31 Batch time: 13.0994
+     > Phase: train Epoch: 1/30 Iter: 11/31 Batch time: 13.2481
+     > Phase: train Epoch: 1/30 Iter: 12/31 Batch time: 13.1044
+     > Phase: train Epoch: 1/30 Iter: 13/31 Batch time: 13.3151
+     > Phase: train Epoch: 1/30 Iter: 14/31 Batch time: 13.2420
+     > Phase: train Epoch: 1/30 Iter: 15/31 Batch time: 13.2820
+     > Phase: train Epoch: 1/30 Iter: 16/31 Batch time: 13.1331
+     > Phase: train Epoch: 1/30 Iter: 17/31 Batch time: 13.1551
+     > Phase: train Epoch: 1/30 Iter: 18/31 Batch time: 13.0205
+     > Phase: train Epoch: 1/30 Iter: 19/31 Batch time: 13.5175
+     > Phase: train Epoch: 1/30 Iter: 20/31 Batch time: 13.2064
+     > Phase: train Epoch: 1/30 Iter: 21/31 Batch time: 13.2596
+     > Phase: train Epoch: 1/30 Iter: 22/31 Batch time: 13.2081
+     > Phase: train Epoch: 1/30 Iter: 23/31 Batch time: 13.5623
+     > Phase: train Epoch: 1/30 Iter: 24/31 Batch time: 14.7485
+     > Phase: train Epoch: 1/30 Iter: 25/31 Batch time: 15.1359
+     > Phase: train Epoch: 1/30 Iter: 26/31 Batch time: 15.0825
+     > Phase: train Epoch: 1/30 Iter: 27/31 Batch time: 14.8327
+     > Phase: train Epoch: 1/30 Iter: 28/31 Batch time: 14.7667
+     > Phase: train Epoch: 1/30 Iter: 29/31 Batch time: 14.8241
+     > Phase: train Epoch: 1/30 Iter: 30/31 Batch time: 18.3536
+     > Phase: train Epoch: 1/30 Loss: 0.6145 Acc: 0.6875        
+     > Phase: validation Epoch: 1/30 Iter: 1/7 Batch time: 0.9774
+     > Phase: validation Epoch: 1/30 Iter: 2/7 Batch time: 0.9346
+     > Phase: validation Epoch: 1/30 Iter: 3/7 Batch time: 0.8847
+     > Phase: validation Epoch: 1/30 Iter: 4/7 Batch time: 0.9246
+     > Phase: validation Epoch: 1/30 Iter: 5/7 Batch time: 0.9525
+     > Phase: validation Epoch: 1/30 Iter: 6/7 Batch time: 0.9924
+     > Phase: validation Epoch: 1/30 Iter: 7/7 Batch time: 0.3201
+     > Phase: validation   Epoch: 1/30 Loss: 0.4807 Acc: 0.8400        
+* Saving interim model while training: swgCQ_simIBMQLocal-at-epoch-1(30)-14072020172453.pth
+[[1.         0.6875     0.6144937  0.84       0.48068776]]
+     > Phase: train Epoch: 2/30 Iter: 1/31 Batch time: 18.2846
+     > Phase: train Epoch: 2/30 Iter: 2/31 Batch time: 18.2314
+     > Phase: train Epoch: 2/30 Iter: 3/31 Batch time: 15.8895
+     > Phase: train Epoch: 2/30 Iter: 4/31 Batch time: 14.9614
+     > Phase: train Epoch: 2/30 Iter: 5/31 Batch time: 14.6974
+     > Phase: train Epoch: 2/30 Iter: 6/31 Batch time: 14.7240
+     > Phase: train Epoch: 2/30 Iter: 7/31 Batch time: 14.8430
+     > Phase: train Epoch: 2/30 Iter: 8/31 Batch time: 15.1276
+     > Phase: train Epoch: 2/30 Iter: 9/31 Batch time: 15.1107
+     > Phase: train Epoch: 2/30 Iter: 10/31 Batch time: 14.9368
+     > Phase: train Epoch: 2/30 Iter: 11/31 Batch time: 14.9709
+     > Phase: train Epoch: 2/30 Iter: 12/31 Batch time: 14.8918
+     > Phase: train Epoch: 2/30 Iter: 13/31 Batch time: 15.0370
+     > Phase: train Epoch: 2/30 Iter: 14/31 Batch time: 14.8118
+     > Phase: train Epoch: 2/30 Iter: 15/31 Batch time: 15.0647
+     > Phase: train Epoch: 2/30 Iter: 16/31 Batch time: 14.9176
+     > Phase: train Epoch: 2/30 Iter: 17/31 Batch time: 15.2611
+     > Phase: train Epoch: 2/30 Iter: 18/31 Batch time: 16.5057
+     > Phase: train Epoch: 2/30 Iter: 19/31 Batch time: 15.3036
+     > Phase: train Epoch: 2/30 Iter: 20/31 Batch time: 14.9775
+     > Phase: train Epoch: 2/30 Iter: 21/31 Batch time: 14.8968
+     > Phase: train Epoch: 2/30 Iter: 22/31 Batch time: 14.7878
+     > Phase: train Epoch: 2/30 Iter: 23/31 Batch time: 14.8102
+     > Phase: train Epoch: 2/30 Iter: 24/31 Batch time: 14.9490
+     > Phase: train Epoch: 2/30 Iter: 25/31 Batch time: 15.6714
+     > Phase: train Epoch: 2/30 Iter: 26/31 Batch time: 15.2783
+     > Phase: train Epoch: 2/30 Iter: 27/31 Batch time: 15.0540
+     > Phase: train Epoch: 2/30 Iter: 28/31 Batch time: 15.1592
+     > Phase: train Epoch: 2/30 Iter: 29/31 Batch time: 15.2385
+     > Phase: train Epoch: 2/30 Iter: 30/31 Batch time: 15.0488
+     > Phase: train Epoch: 2/30 Loss: 0.4623 Acc: 0.8125        
+     > Phase: validation Epoch: 2/30 Iter: 1/7 Batch time: 1.0103
+     > Phase: validation Epoch: 2/30 Iter: 2/7 Batch time: 0.9298
+     > Phase: validation Epoch: 2/30 Iter: 3/7 Batch time: 0.8617
+     > Phase: validation Epoch: 2/30 Iter: 4/7 Batch time: 0.8458
+     > Phase: validation Epoch: 2/30 Iter: 5/7 Batch time: 0.8752
+     > Phase: validation Epoch: 2/30 Iter: 6/7 Batch time: 1.1221
+     > Phase: validation Epoch: 2/30 Iter: 7/7 Batch time: 0.2893
+     > Phase: validation   Epoch: 2/30 Loss: 0.3722 Acc: 0.9200        
+* Saving interim model while training: swgCQ_simIBMQLocal-at-epoch-2(30)-14072020172453.pth
+[[2.         0.8125     0.4623062  0.92       0.37219827]]
+     > Phase: train Epoch: 3/30 Iter: 1/31 Batch time: 13.8174
+     > Phase: train Epoch: 3/30 Iter: 2/31 Batch time: 13.6090
+     > Phase: train Epoch: 3/30 Iter: 3/31 Batch time: 13.3982
+     > Phase: train Epoch: 3/30 Iter: 4/31 Batch time: 13.7613
+     > Phase: train Epoch: 3/30 Iter: 5/31 Batch time: 13.5261
+     > Phase: train Epoch: 3/30 Iter: 6/31 Batch time: 13.7273
+     > Phase: train Epoch: 3/30 Iter: 7/31 Batch time: 13.4153
+     > Phase: train Epoch: 3/30 Iter: 8/31 Batch time: 13.9162
+     > Phase: train Epoch: 3/30 Iter: 9/31 Batch time: 13.6857
+     > Phase: train Epoch: 3/30 Iter: 10/31 Batch time: 13.6676
+     > Phase: train Epoch: 3/30 Iter: 11/31 Batch time: 13.3843
+     > Phase: train Epoch: 3/30 Iter: 12/31 Batch time: 13.5014
+     > Phase: train Epoch: 3/30 Iter: 13/31 Batch time: 13.4436
+     > Phase: train Epoch: 3/30 Iter: 14/31 Batch time: 13.3398
+     > Phase: train Epoch: 3/30 Iter: 15/31 Batch time: 13.2864
+     > Phase: train Epoch: 3/30 Iter: 16/31 Batch time: 13.2552
+     > Phase: train Epoch: 3/30 Iter: 17/31 Batch time: 13.2849
+     > Phase: train Epoch: 3/30 Iter: 18/31 Batch time: 13.2962
+     > Phase: train Epoch: 3/30 Iter: 19/31 Batch time: 13.5481
+     > Phase: train Epoch: 3/30 Iter: 20/31 Batch time: 13.2870
+     > Phase: train Epoch: 3/30 Iter: 21/31 Batch time: 13.3914
+     > Phase: train Epoch: 3/30 Iter: 22/31 Batch time: 13.2820
+     > Phase: train Epoch: 3/30 Iter: 23/31 Batch time: 13.4472
+     > Phase: train Epoch: 3/30 Iter: 24/31 Batch time: 13.3015
+     > Phase: train Epoch: 3/30 Iter: 25/31 Batch time: 13.3142
+     > Phase: train Epoch: 3/30 Iter: 26/31 Batch time: 13.2991
+     > Phase: train Epoch: 3/30 Iter: 27/31 Batch time: 13.1205
+     > Phase: train Epoch: 3/30 Iter: 28/31 Batch time: 13.2365
+     > Phase: train Epoch: 3/30 Iter: 29/31 Batch time: 13.3449
+     > Phase: train Epoch: 3/30 Iter: 30/31 Batch time: 13.5723
+     > Phase: train Epoch: 3/30 Loss: 0.3748 Acc: 0.9125        
+     > Phase: validation Epoch: 3/30 Iter: 1/7 Batch time: 0.8941
+     > Phase: validation Epoch: 3/30 Iter: 2/7 Batch time: 0.8897
+     > Phase: validation Epoch: 3/30 Iter: 3/7 Batch time: 0.9326
+     > Phase: validation Epoch: 3/30 Iter: 4/7 Batch time: 0.7889
+     > Phase: validation Epoch: 3/30 Iter: 5/7 Batch time: 0.7899
+     > Phase: validation Epoch: 3/30 Iter: 6/7 Batch time: 0.8373
+     > Phase: validation Epoch: 3/30 Iter: 7/7 Batch time: 0.2842
+     > Phase: validation   Epoch: 3/30 Loss: 0.2874 Acc: 0.9800        
+* Saving interim model while training: swgCQ_simIBMQLocal-at-epoch-3(30)-14072020172453.pth
+[[3.         0.9125     0.37478789 0.98       0.28741294]]
+     > Phase: train Epoch: 4/30 Iter: 1/31 Batch time: 13.4019
+     > Phase: train Epoch: 4/30 Iter: 2/31 Batch time: 13.4845
+     > Phase: train Epoch: 4/30 Iter: 3/31 Batch time: 13.3104
+     > Phase: train Epoch: 4/30 Iter: 4/31 Batch time: 13.3765
+     > Phase: train Epoch: 4/30 Iter: 5/31 Batch time: 13.2121
+     > Phase: train Epoch: 4/30 Iter: 6/31 Batch time: 13.2373
+     > Phase: train Epoch: 4/30 Iter: 7/31 Batch time: 13.3633
+     > Phase: train Epoch: 4/30 Iter: 8/31 Batch time: 13.2629
+     > Phase: train Epoch: 4/30 Iter: 9/31 Batch time: 13.3012
+     > Phase: train Epoch: 4/30 Iter: 10/31 Batch time: 13.3280
+     > Phase: train Epoch: 4/30 Iter: 11/31 Batch time: 13.4027
+     > Phase: train Epoch: 4/30 Iter: 12/31 Batch time: 13.3341
+     > Phase: train Epoch: 4/30 Iter: 13/31 Batch time: 13.3045
+     > Phase: train Epoch: 4/30 Iter: 14/31 Batch time: 13.6161
+     > Phase: train Epoch: 4/30 Iter: 15/31 Batch time: 13.1674
+     > Phase: train Epoch: 4/30 Iter: 16/31 Batch time: 13.2952
+     > Phase: train Epoch: 4/30 Iter: 17/31 Batch time: 13.4146
+     > Phase: train Epoch: 4/30 Iter: 18/31 Batch time: 13.3226
+     > Phase: train Epoch: 4/30 Iter: 19/31 Batch time: 13.4095
+     > Phase: train Epoch: 4/30 Iter: 20/31 Batch time: 13.4920
+     > Phase: train Epoch: 4/30 Iter: 21/31 Batch time: 13.2956
+     > Phase: train Epoch: 4/30 Iter: 22/31 Batch time: 13.8596
+     > Phase: train Epoch: 4/30 Iter: 23/31 Batch time: 13.4187
+     > Phase: train Epoch: 4/30 Iter: 24/31 Batch time: 13.4098
+     > Phase: train Epoch: 4/30 Iter: 25/31 Batch time: 13.2402
+     > Phase: train Epoch: 4/30 Iter: 26/31 Batch time: 13.3733
+     > Phase: train Epoch: 4/30 Iter: 27/31 Batch time: 13.2519
+     > Phase: train Epoch: 4/30 Iter: 28/31 Batch time: 13.4617
+     > Phase: train Epoch: 4/30 Iter: 29/31 Batch time: 13.1078
+     > Phase: train Epoch: 4/30 Iter: 30/31 Batch time: 13.3315
+     > Phase: train Epoch: 4/30 Loss: 0.3427 Acc: 0.9042        
+     > Phase: validation Epoch: 4/30 Iter: 1/7 Batch time: 0.7869
+     > Phase: validation Epoch: 4/30 Iter: 2/7 Batch time: 0.8457
+     > Phase: validation Epoch: 4/30 Iter: 3/7 Batch time: 0.7999
+     > Phase: validation Epoch: 4/30 Iter: 4/7 Batch time: 0.8482
+     > Phase: validation Epoch: 4/30 Iter: 5/7 Batch time: 0.9241
+     > Phase: validation Epoch: 4/30 Iter: 6/7 Batch time: 0.7875
+     > Phase: validation Epoch: 4/30 Iter: 7/7 Batch time: 0.2523
+     > Phase: validation   Epoch: 4/30 Loss: 0.2684 Acc: 0.9800        
+* Saving interim model while training: swgCQ_simIBMQLocal-at-epoch-4(30)-14072020172453.pth
+[[4.         0.9125     0.34269168 0.98       0.26839225]]
+     > Phase: train Epoch: 5/30 Iter: 1/31 Batch time: 13.4429
+     > Phase: train Epoch: 5/30 Iter: 2/31 Batch time: 13.0859
+     > Phase: train Epoch: 5/30 Iter: 3/31 Batch time: 13.4220
+     > Phase: train Epoch: 5/30 Iter: 4/31 Batch time: 13.3240
+     > Phase: train Epoch: 5/30 Iter: 5/31 Batch time: 13.3247
+     > Phase: train Epoch: 5/30 Iter: 6/31 Batch time: 13.2934
+     > Phase: train Epoch: 5/30 Iter: 7/31 Batch time: 13.2789
+     > Phase: train Epoch: 5/30 Iter: 8/31 Batch time: 13.4381
+     > Phase: train Epoch: 5/30 Iter: 9/31 Batch time: 13.3243
+     > Phase: train Epoch: 5/30 Iter: 10/31 Batch time: 13.2531
+     > Phase: train Epoch: 5/30 Iter: 11/31 Batch time: 13.2233
+     > Phase: train Epoch: 5/30 Iter: 12/31 Batch time: 13.4046
+     > Phase: train Epoch: 5/30 Iter: 13/31 Batch time: 13.2495
+     > Phase: train Epoch: 5/30 Iter: 14/31 Batch time: 13.8596
+     > Phase: train Epoch: 5/30 Iter: 15/31 Batch time: 13.2836
+     > Phase: train Epoch: 5/30 Iter: 16/31 Batch time: 13.1688
+     > Phase: train Epoch: 5/30 Iter: 17/31 Batch time: 13.4482
+     > Phase: train Epoch: 5/30 Iter: 18/31 Batch time: 13.2060
+     > Phase: train Epoch: 5/30 Iter: 19/31 Batch time: 13.3789
+     > Phase: train Epoch: 5/30 Iter: 20/31 Batch time: 13.2837
+     > Phase: train Epoch: 5/30 Iter: 21/31 Batch time: 13.3121
+     > Phase: train Epoch: 5/30 Iter: 22/31 Batch time: 13.2734
+     > Phase: train Epoch: 5/30 Iter: 23/31 Batch time: 13.2282
+     > Phase: train Epoch: 5/30 Iter: 24/31 Batch time: 13.2945
+     > Phase: train Epoch: 5/30 Iter: 25/31 Batch time: 13.4551
+     > Phase: train Epoch: 5/30 Iter: 26/31 Batch time: 13.2937
+     > Phase: train Epoch: 5/30 Iter: 27/31 Batch time: 13.3418
+     > Phase: train Epoch: 5/30 Iter: 28/31 Batch time: 13.3953
+     > Phase: train Epoch: 5/30 Iter: 29/31 Batch time: 13.2430
+     > Phase: train Epoch: 5/30 Iter: 30/31 Batch time: 13.4488
+     > Phase: train Epoch: 5/30 Loss: 0.3042 Acc: 0.9292        
+     > Phase: validation Epoch: 5/30 Iter: 1/7 Batch time: 0.8058
+     > Phase: validation Epoch: 5/30 Iter: 2/7 Batch time: 0.8817
+     > Phase: validation Epoch: 5/30 Iter: 3/7 Batch time: 0.8220
+     > Phase: validation Epoch: 5/30 Iter: 4/7 Batch time: 0.8048
+     > Phase: validation Epoch: 5/30 Iter: 5/7 Batch time: 0.7979
+     > Phase: validation Epoch: 5/30 Iter: 6/7 Batch time: 0.8174
+     > Phase: validation Epoch: 5/30 Iter: 7/7 Batch time: 0.2504
+     > Phase: validation   Epoch: 5/30 Loss: 0.2554 Acc: 0.9800        
+* Saving interim model while training: swgCQ_simIBMQLocal-at-epoch-5(30)-14072020172453.pth
+[[5.         0.92916667 0.30423165 0.98       0.25543529]]
+     > Phase: train Epoch: 6/30 Iter: 1/31 Batch time: 13.4258
+     > Phase: train Epoch: 6/30 Iter: 2/31 Batch time: 13.4542
+     > Phase: train Epoch: 6/30 Iter: 3/31 Batch time: 15.9583
+     > Phase: train Epoch: 6/30 Iter: 4/31 Batch time: 13.4358
+     > Phase: train Epoch: 6/30 Iter: 5/31 Batch time: 13.6178
+     > Phase: train Epoch: 6/30 Iter: 6/31 Batch time: 14.0442
+     > Phase: train Epoch: 6/30 Iter: 7/31 Batch time: 13.4667
+     > Phase: train Epoch: 6/30 Iter: 8/31 Batch time: 13.6099
+     > Phase: train Epoch: 6/30 Iter: 9/31 Batch time: 13.4118
+     > Phase: train Epoch: 6/30 Iter: 10/31 Batch time: 13.5256
+     > Phase: train Epoch: 6/30 Iter: 11/31 Batch time: 13.5086
+     > Phase: train Epoch: 6/30 Iter: 12/31 Batch time: 13.5220
+     > Phase: train Epoch: 6/30 Iter: 13/31 Batch time: 13.5643
+     > Phase: train Epoch: 6/30 Iter: 14/31 Batch time: 13.6188
+     > Phase: train Epoch: 6/30 Iter: 15/31 Batch time: 13.4911
+     > Phase: train Epoch: 6/30 Iter: 16/31 Batch time: 13.4627
+     > Phase: train Epoch: 6/30 Iter: 17/31 Batch time: 13.4889
+     > Phase: train Epoch: 6/30 Iter: 18/31 Batch time: 13.4931
+     > Phase: train Epoch: 6/30 Iter: 19/31 Batch time: 13.4491
+     > Phase: train Epoch: 6/30 Iter: 20/31 Batch time: 13.3405
+     > Phase: train Epoch: 6/30 Iter: 21/31 Batch time: 14.8082
+     > Phase: train Epoch: 6/30 Iter: 22/31 Batch time: 13.5931
+     > Phase: train Epoch: 6/30 Iter: 23/31 Batch time: 13.5375
+     > Phase: train Epoch: 6/30 Iter: 24/31 Batch time: 13.3300
+     > Phase: train Epoch: 6/30 Iter: 25/31 Batch time: 13.4576
+     > Phase: train Epoch: 6/30 Iter: 26/31 Batch time: 13.4344
+     > Phase: train Epoch: 6/30 Iter: 27/31 Batch time: 13.7198
+     > Phase: train Epoch: 6/30 Iter: 28/31 Batch time: 13.3503
+     > Phase: train Epoch: 6/30 Iter: 29/31 Batch time: 13.3846
+     > Phase: train Epoch: 6/30 Iter: 30/31 Batch time: 13.3311
+     > Phase: train Epoch: 6/30 Loss: 0.3262 Acc: 0.9083        
+     > Phase: validation Epoch: 6/30 Iter: 1/7 Batch time: 0.7878
+     > Phase: validation Epoch: 6/30 Iter: 2/7 Batch time: 0.7710
+     > Phase: validation Epoch: 6/30 Iter: 3/7 Batch time: 0.8178
+     > Phase: validation Epoch: 6/30 Iter: 4/7 Batch time: 0.7979
+     > Phase: validation Epoch: 6/30 Iter: 5/7 Batch time: 0.7734
+     > Phase: validation Epoch: 6/30 Iter: 6/7 Batch time: 0.9046
+     > Phase: validation Epoch: 6/30 Iter: 7/7 Batch time: 0.2294
+     > Phase: validation   Epoch: 6/30 Loss: 0.2043 Acc: 1.0000        
+* Saving interim model while training: swgCQ_simIBMQLocal-at-epoch-6(30)-14072020172453.pth
+[[6.         0.92916667 0.30423165 1.         0.20429582]]
+     > Phase: train Epoch: 7/30 Iter: 1/31 Batch time: 13.3250
+     > Phase: train Epoch: 7/30 Iter: 2/31 Batch time: 13.3845
+     > Phase: train Epoch: 7/30 Iter: 3/31 Batch time: 13.3279
+     > Phase: train Epoch: 7/30 Iter: 4/31 Batch time: 13.2708
+     > Phase: train Epoch: 7/30 Iter: 5/31 Batch time: 13.2790
+     > Phase: train Epoch: 7/30 Iter: 6/31 Batch time: 13.2745
+     > Phase: train Epoch: 7/30 Iter: 7/31 Batch time: 13.2917
+     > Phase: train Epoch: 7/30 Iter: 8/31 Batch time: 13.2823
+     > Phase: train Epoch: 7/30 Iter: 9/31 Batch time: 13.5891
+     > Phase: train Epoch: 7/30 Iter: 10/31 Batch time: 13.3858
+     > Phase: train Epoch: 7/30 Iter: 11/31 Batch time: 13.3282
+     > Phase: train Epoch: 7/30 Iter: 12/31 Batch time: 13.4145
+     > Phase: train Epoch: 7/30 Iter: 13/31 Batch time: 13.3212
+     > Phase: train Epoch: 7/30 Iter: 14/31 Batch time: 14.4940
+     > Phase: train Epoch: 7/30 Iter: 15/31 Batch time: 14.7860
+     > Phase: train Epoch: 7/30 Iter: 16/31 Batch time: 14.7768
+     > Phase: train Epoch: 7/30 Iter: 17/31 Batch time: 14.7663
+     > Phase: train Epoch: 7/30 Iter: 18/31 Batch time: 14.8585
+     > Phase: train Epoch: 7/30 Iter: 19/31 Batch time: 15.3473
+     > Phase: train Epoch: 7/30 Iter: 20/31 Batch time: 15.0397
+     > Phase: train Epoch: 7/30 Iter: 21/31 Batch time: 14.9052
+     > Phase: train Epoch: 7/30 Iter: 22/31 Batch time: 14.7600
+     > Phase: train Epoch: 7/30 Iter: 23/31 Batch time: 14.8046
+     > Phase: train Epoch: 7/30 Iter: 24/31 Batch time: 14.8537
+     > Phase: train Epoch: 7/30 Iter: 25/31 Batch time: 15.0116
+     > Phase: train Epoch: 7/30 Iter: 26/31 Batch time: 15.0342
+     > Phase: train Epoch: 7/30 Iter: 27/31 Batch time: 14.9742
+     > Phase: train Epoch: 7/30 Iter: 28/31 Batch time: 15.0616
+     > Phase: train Epoch: 7/30 Iter: 29/31 Batch time: 15.0619
+     > Phase: train Epoch: 7/30 Iter: 30/31 Batch time: 14.9138
+     > Phase: train Epoch: 7/30 Loss: 0.2588 Acc: 0.9500        
+     > Phase: validation Epoch: 7/30 Iter: 1/7 Batch time: 0.8808
+     > Phase: validation Epoch: 7/30 Iter: 2/7 Batch time: 0.8951
+     > Phase: validation Epoch: 7/30 Iter: 3/7 Batch time: 0.8983
+     > Phase: validation Epoch: 7/30 Iter: 4/7 Batch time: 0.8827
+     > Phase: validation Epoch: 7/30 Iter: 5/7 Batch time: 0.8877
+     > Phase: validation Epoch: 7/30 Iter: 6/7 Batch time: 0.8769
+     > Phase: validation Epoch: 7/30 Iter: 7/7 Batch time: 0.2633
+     > Phase: validation   Epoch: 7/30 Loss: 0.1871 Acc: 1.0000        
+* Saving interim model while training: swgCQ_simIBMQLocal-at-epoch-7(30)-14072020172453.pth
+[[7.         0.95       0.25884814 1.         0.18710654]]
+     > Phase: train Epoch: 8/30 Iter: 1/31 Batch time: 15.1686
+     > Phase: train Epoch: 8/30 Iter: 2/31 Batch time: 14.9829
+     > Phase: train Epoch: 8/30 Iter: 3/31 Batch time: 14.8761
+     > Phase: train Epoch: 8/30 Iter: 4/31 Batch time: 14.9736
+     > Phase: train Epoch: 8/30 Iter: 5/31 Batch time: 14.7961
+     > Phase: train Epoch: 8/30 Iter: 6/31 Batch time: 14.9792
+     > Phase: train Epoch: 8/30 Iter: 7/31 Batch time: 14.9590
+     > Phase: train Epoch: 8/30 Iter: 8/31 Batch time: 15.3943
+     > Phase: train Epoch: 8/30 Iter: 9/31 Batch time: 14.6980
+     > Phase: train Epoch: 8/30 Iter: 10/31 Batch time: 14.9438
+     > Phase: train Epoch: 8/30 Iter: 11/31 Batch time: 14.8685
+     > Phase: train Epoch: 8/30 Iter: 12/31 Batch time: 14.9712
+     > Phase: train Epoch: 8/30 Iter: 13/31 Batch time: 15.0411
+     > Phase: train Epoch: 8/30 Iter: 14/31 Batch time: 15.0132
+     > Phase: train Epoch: 8/30 Iter: 15/31 Batch time: 15.0543
+     > Phase: train Epoch: 8/30 Iter: 16/31 Batch time: 15.0310
+     > Phase: train Epoch: 8/30 Iter: 17/31 Batch time: 14.9766
+     > Phase: train Epoch: 8/30 Iter: 18/31 Batch time: 14.9524
+     > Phase: train Epoch: 8/30 Iter: 19/31 Batch time: 15.2208
+     > Phase: train Epoch: 8/30 Iter: 20/31 Batch time: 14.9198
+     > Phase: train Epoch: 8/30 Iter: 21/31 Batch time: 15.3507
+     > Phase: train Epoch: 8/30 Iter: 22/31 Batch time: 14.8625
+     > Phase: train Epoch: 8/30 Iter: 23/31 Batch time: 13.5519
+     > Phase: train Epoch: 8/30 Iter: 24/31 Batch time: 13.6975
+     > Phase: train Epoch: 8/30 Iter: 25/31 Batch time: 13.5573
+     > Phase: train Epoch: 8/30 Iter: 26/31 Batch time: 14.7557
+     > Phase: train Epoch: 8/30 Iter: 27/31 Batch time: 13.8155
+     > Phase: train Epoch: 8/30 Iter: 28/31 Batch time: 13.7499
+     > Phase: train Epoch: 8/30 Iter: 29/31 Batch time: 13.6948
+     > Phase: train Epoch: 8/30 Iter: 30/31 Batch time: 13.4858
+     > Phase: train Epoch: 8/30 Loss: 0.2765 Acc: 0.9250        
+     > Phase: validation Epoch: 8/30 Iter: 1/7 Batch time: 0.8064
+     > Phase: validation Epoch: 8/30 Iter: 2/7 Batch time: 0.7475
+     > Phase: validation Epoch: 8/30 Iter: 3/7 Batch time: 0.8094
+     > Phase: validation Epoch: 8/30 Iter: 4/7 Batch time: 0.7809
+     > Phase: validation Epoch: 8/30 Iter: 5/7 Batch time: 0.7979
+     > Phase: validation Epoch: 8/30 Iter: 6/7 Batch time: 0.7480
+     > Phase: validation Epoch: 8/30 Iter: 7/7 Batch time: 0.2489
+     > Phase: validation   Epoch: 8/30 Loss: 0.2144 Acc: 0.9600        
+* Saving interim model while training: swgCQ_simIBMQLocal-at-epoch-8(30)-14072020172453.pth
+[[8.         0.95       0.25884814 1.         0.18710654]]
+     > Phase: train Epoch: 9/30 Iter: 1/31 Batch time: 13.5700
+     > Phase: train Epoch: 9/30 Iter: 2/31 Batch time: 13.3756
+     > Phase: train Epoch: 9/30 Iter: 3/31 Batch time: 13.3799
+     > Phase: train Epoch: 9/30 Iter: 4/31 Batch time: 13.3522
+     > Phase: train Epoch: 9/30 Iter: 5/31 Batch time: 13.3720
+     > Phase: train Epoch: 9/30 Iter: 6/31 Batch time: 13.4585
+     > Phase: train Epoch: 9/30 Iter: 7/31 Batch time: 13.5032
+     > Phase: train Epoch: 9/30 Iter: 8/31 Batch time: 13.3610
+     > Phase: train Epoch: 9/30 Iter: 9/31 Batch time: 13.2954
+     > Phase: train Epoch: 9/30 Iter: 10/31 Batch time: 13.3838
+     > Phase: train Epoch: 9/30 Iter: 11/31 Batch time: 13.3187
+     > Phase: train Epoch: 9/30 Iter: 12/31 Batch time: 13.5079
+     > Phase: train Epoch: 9/30 Iter: 13/31 Batch time: 13.3939
+     > Phase: train Epoch: 9/30 Iter: 14/31 Batch time: 13.6708
+     > Phase: train Epoch: 9/30 Iter: 15/31 Batch time: 13.4155
+     > Phase: train Epoch: 9/30 Iter: 16/31 Batch time: 13.5565
+     > Phase: train Epoch: 9/30 Iter: 17/31 Batch time: 13.4418
+     > Phase: train Epoch: 9/30 Iter: 18/31 Batch time: 14.3517
+     > Phase: train Epoch: 9/30 Iter: 19/31 Batch time: 14.7213
+     > Phase: train Epoch: 9/30 Iter: 20/31 Batch time: 15.4340
+     > Phase: train Epoch: 9/30 Iter: 21/31 Batch time: 14.6876
+     > Phase: train Epoch: 9/30 Iter: 22/31 Batch time: 15.0252
+     > Phase: train Epoch: 9/30 Iter: 23/31 Batch time: 14.7494
+     > Phase: train Epoch: 9/30 Iter: 24/31 Batch time: 14.9820
+     > Phase: train Epoch: 9/30 Iter: 25/31 Batch time: 14.7786
+     > Phase: train Epoch: 9/30 Iter: 26/31 Batch time: 15.0500
+     > Phase: train Epoch: 9/30 Iter: 27/31 Batch time: 14.7175
+     > Phase: train Epoch: 9/30 Iter: 28/31 Batch time: 15.2684
+     > Phase: train Epoch: 9/30 Iter: 29/31 Batch time: 14.8706
+     > Phase: train Epoch: 9/30 Iter: 30/31 Batch time: 15.1679
+     > Phase: train Epoch: 9/30 Loss: 0.2738 Acc: 0.9208        
+     > Phase: validation Epoch: 9/30 Iter: 1/7 Batch time: 0.8553
+     > Phase: validation Epoch: 9/30 Iter: 2/7 Batch time: 0.9326
+     > Phase: validation Epoch: 9/30 Iter: 3/7 Batch time: 0.8607
+     > Phase: validation Epoch: 9/30 Iter: 4/7 Batch time: 0.8483
+     > Phase: validation Epoch: 9/30 Iter: 5/7 Batch time: 0.9420
+     > Phase: validation Epoch: 9/30 Iter: 6/7 Batch time: 0.8823
+     > Phase: validation Epoch: 9/30 Iter: 7/7 Batch time: 0.2578
+     > Phase: validation   Epoch: 9/30 Loss: 0.1615 Acc: 1.0000        
+* Saving interim model while training: swgCQ_simIBMQLocal-at-epoch-9(30)-14072020172453.pth
+[[9.         0.95       0.25884814 1.         0.16147177]]
+     > Phase: train Epoch: 10/30 Iter: 1/31 Batch time: 15.0346
+     > Phase: train Epoch: 10/30 Iter: 2/31 Batch time: 15.1679
+     > Phase: train Epoch: 10/30 Iter: 3/31 Batch time: 15.0601
+     > Phase: train Epoch: 10/30 Iter: 4/31 Batch time: 14.8825
+     > Phase: train Epoch: 10/30 Iter: 5/31 Batch time: 15.0692
+     > Phase: train Epoch: 10/30 Iter: 6/31 Batch time: 14.9797
+     > Phase: train Epoch: 10/30 Iter: 7/31 Batch time: 15.6720
+     > Phase: train Epoch: 10/30 Iter: 8/31 Batch time: 14.7966
+     > Phase: train Epoch: 10/30 Iter: 9/31 Batch time: 15.4842
+     > Phase: train Epoch: 10/30 Iter: 10/31 Batch time: 15.1864
+     > Phase: train Epoch: 10/30 Iter: 11/31 Batch time: 15.0539
+     > Phase: train Epoch: 10/30 Iter: 12/31 Batch time: 14.7808
+     > Phase: train Epoch: 10/30 Iter: 13/31 Batch time: 14.8860
+     > Phase: train Epoch: 10/30 Iter: 14/31 Batch time: 14.9825
+     > Phase: train Epoch: 10/30 Iter: 15/31 Batch time: 15.0868
+     > Phase: train Epoch: 10/30 Iter: 16/31 Batch time: 15.0834
+     > Phase: train Epoch: 10/30 Iter: 17/31 Batch time: 15.1506
+     > Phase: train Epoch: 10/30 Iter: 18/31 Batch time: 15.1287
+     > Phase: train Epoch: 10/30 Iter: 19/31 Batch time: 15.0775
+     > Phase: train Epoch: 10/30 Iter: 20/31 Batch time: 15.0746
+     > Phase: train Epoch: 10/30 Iter: 21/31 Batch time: 15.0133
+     > Phase: train Epoch: 10/30 Iter: 22/31 Batch time: 15.0009
+     > Phase: train Epoch: 10/30 Iter: 23/31 Batch time: 14.9913
+     > Phase: train Epoch: 10/30 Iter: 24/31 Batch time: 14.9438
+     > Phase: train Epoch: 10/30 Iter: 25/31 Batch time: 15.0832
+     > Phase: train Epoch: 10/30 Iter: 26/31 Batch time: 14.9653
+     > Phase: train Epoch: 10/30 Iter: 27/31 Batch time: 13.5837
+     > Phase: train Epoch: 10/30 Iter: 28/31 Batch time: 13.3481
+     > Phase: train Epoch: 10/30 Iter: 29/31 Batch time: 13.9575
+     > Phase: train Epoch: 10/30 Iter: 30/31 Batch time: 13.4507
+     > Phase: train Epoch: 10/30 Loss: 0.2368 Acc: 0.9458        
+     > Phase: validation Epoch: 10/30 Iter: 1/7 Batch time: 0.9042
+     > Phase: validation Epoch: 10/30 Iter: 2/7 Batch time: 0.8250
+     > Phase: validation Epoch: 10/30 Iter: 3/7 Batch time: 0.8152
+     > Phase: validation Epoch: 10/30 Iter: 4/7 Batch time: 0.8617
+     > Phase: validation Epoch: 10/30 Iter: 5/7 Batch time: 0.8458
+     > Phase: validation Epoch: 10/30 Iter: 6/7 Batch time: 0.8088
+     > Phase: validation Epoch: 10/30 Iter: 7/7 Batch time: 0.2394
+     > Phase: validation   Epoch: 10/30 Loss: 0.1452 Acc: 1.0000        
+* Saving interim model while training: swgCQ_simIBMQLocal-at-epoch-10(30)-14072020172453.pth
+[[10.          0.95        0.23679709  1.          0.14523862]]
+     > Phase: train Epoch: 11/30 Iter: 1/31 Batch time: 13.5279
+     > Phase: train Epoch: 11/30 Iter: 2/31 Batch time: 13.2966
+     > Phase: train Epoch: 11/30 Iter: 3/31 Batch time: 13.5763
+     > Phase: train Epoch: 11/30 Iter: 4/31 Batch time: 13.6154
+     > Phase: train Epoch: 11/30 Iter: 5/31 Batch time: 14.6760
+     > Phase: train Epoch: 11/30 Iter: 6/31 Batch time: 13.6218
+     > Phase: train Epoch: 11/30 Iter: 7/31 Batch time: 13.5714
+     > Phase: train Epoch: 11/30 Iter: 8/31 Batch time: 13.3583
+     > Phase: train Epoch: 11/30 Iter: 9/31 Batch time: 13.3516
+     > Phase: train Epoch: 11/30 Iter: 10/31 Batch time: 13.2529
+     > Phase: train Epoch: 11/30 Iter: 11/31 Batch time: 13.4925
+     > Phase: train Epoch: 11/30 Iter: 12/31 Batch time: 13.3155
+     > Phase: train Epoch: 11/30 Iter: 13/31 Batch time: 13.4540
+     > Phase: train Epoch: 11/30 Iter: 14/31 Batch time: 13.3275
+     > Phase: train Epoch: 11/30 Iter: 15/31 Batch time: 13.4536
+     > Phase: train Epoch: 11/30 Iter: 16/31 Batch time: 13.6006
+     > Phase: train Epoch: 11/30 Iter: 17/31 Batch time: 13.3391
+     > Phase: train Epoch: 11/30 Iter: 18/31 Batch time: 13.3414
+     > Phase: train Epoch: 11/30 Iter: 19/31 Batch time: 13.3598
+     > Phase: train Epoch: 11/30 Iter: 20/31 Batch time: 13.4036
+     > Phase: train Epoch: 11/30 Iter: 21/31 Batch time: 13.8225
+     > Phase: train Epoch: 11/30 Iter: 22/31 Batch time: 13.4549
+     > Phase: train Epoch: 11/30 Iter: 23/31 Batch time: 13.3149
+     > Phase: train Epoch: 11/30 Iter: 24/31 Batch time: 13.3124
+     > Phase: train Epoch: 11/30 Iter: 25/31 Batch time: 13.2737
+     > Phase: train Epoch: 11/30 Iter: 26/31 Batch time: 13.3581
+     > Phase: train Epoch: 11/30 Iter: 27/31 Batch time: 13.3530
+     > Phase: train Epoch: 11/30 Iter: 28/31 Batch time: 13.3902
+     > Phase: train Epoch: 11/30 Iter: 29/31 Batch time: 13.2904
+     > Phase: train Epoch: 11/30 Iter: 30/31 Batch time: 13.3740
+     > Phase: train Epoch: 11/30 Loss: 0.2286 Acc: 0.9375        
+     > Phase: validation Epoch: 11/30 Iter: 1/7 Batch time: 0.8009
+     > Phase: validation Epoch: 11/30 Iter: 2/7 Batch time: 0.8024
+     > Phase: validation Epoch: 11/30 Iter: 3/7 Batch time: 0.7990
+     > Phase: validation Epoch: 11/30 Iter: 4/7 Batch time: 0.8049
+     > Phase: validation Epoch: 11/30 Iter: 5/7 Batch time: 0.8118
+     > Phase: validation Epoch: 11/30 Iter: 6/7 Batch time: 0.8277
+     > Phase: validation Epoch: 11/30 Iter: 7/7 Batch time: 0.2374
+     > Phase: validation   Epoch: 11/30 Loss: 0.1452 Acc: 1.0000        
+* Saving interim model while training: swgCQ_simIBMQLocal-at-epoch-11(30)-14072020172453.pth
+[[11.          0.95        0.22856236  1.          0.14515061]]
+     > Phase: train Epoch: 12/30 Iter: 1/31 Batch time: 13.2751
+     > Phase: train Epoch: 12/30 Iter: 2/31 Batch time: 13.3809
+     > Phase: train Epoch: 12/30 Iter: 3/31 Batch time: 13.4485
+     > Phase: train Epoch: 12/30 Iter: 4/31 Batch time: 13.1515
+     > Phase: train Epoch: 12/30 Iter: 5/31 Batch time: 13.2743
+     > Phase: train Epoch: 12/30 Iter: 6/31 Batch time: 13.4743
+     > Phase: train Epoch: 12/30 Iter: 7/31 Batch time: 13.3309
+     > Phase: train Epoch: 12/30 Iter: 8/31 Batch time: 13.2291
+     > Phase: train Epoch: 12/30 Iter: 9/31 Batch time: 13.7384
+     > Phase: train Epoch: 12/30 Iter: 10/31 Batch time: 13.2514
+     > Phase: train Epoch: 12/30 Iter: 11/31 Batch time: 13.2989
+     > Phase: train Epoch: 12/30 Iter: 12/31 Batch time: 13.6483
+     > Phase: train Epoch: 12/30 Iter: 13/31 Batch time: 13.5285
+     > Phase: train Epoch: 12/30 Iter: 14/31 Batch time: 13.3016
+     > Phase: train Epoch: 12/30 Iter: 15/31 Batch time: 13.3514
+     > Phase: train Epoch: 12/30 Iter: 16/31 Batch time: 13.3676
+     > Phase: train Epoch: 12/30 Iter: 17/31 Batch time: 13.3471
+     > Phase: train Epoch: 12/30 Iter: 18/31 Batch time: 13.2372
+     > Phase: train Epoch: 12/30 Iter: 19/31 Batch time: 13.2370
+     > Phase: train Epoch: 12/30 Iter: 20/31 Batch time: 13.4145
+     > Phase: train Epoch: 12/30 Iter: 21/31 Batch time: 13.3211
+     > Phase: train Epoch: 12/30 Iter: 22/31 Batch time: 13.6955
+     > Phase: train Epoch: 12/30 Iter: 23/31 Batch time: 13.3625
+     > Phase: train Epoch: 12/30 Iter: 24/31 Batch time: 13.3744
+     > Phase: train Epoch: 12/30 Iter: 25/31 Batch time: 13.3978
+     > Phase: train Epoch: 12/30 Iter: 26/31 Batch time: 13.2949
+     > Phase: train Epoch: 12/30 Iter: 27/31 Batch time: 13.2729
+     > Phase: train Epoch: 12/30 Iter: 28/31 Batch time: 13.3714
+     > Phase: train Epoch: 12/30 Iter: 29/31 Batch time: 13.3485
+     > Phase: train Epoch: 12/30 Iter: 30/31 Batch time: 13.3067
+     > Phase: train Epoch: 12/30 Loss: 0.2110 Acc: 0.9500        
+     > Phase: validation Epoch: 12/30 Iter: 1/7 Batch time: 0.8196
+     > Phase: validation Epoch: 12/30 Iter: 2/7 Batch time: 0.7999
+     > Phase: validation Epoch: 12/30 Iter: 3/7 Batch time: 1.0058
+     > Phase: validation Epoch: 12/30 Iter: 4/7 Batch time: 0.8288
+     > Phase: validation Epoch: 12/30 Iter: 5/7 Batch time: 0.8993
+     > Phase: validation Epoch: 12/30 Iter: 6/7 Batch time: 0.7962
+     > Phase: validation Epoch: 12/30 Iter: 7/7 Batch time: 0.2753
+     > Phase: validation   Epoch: 12/30 Loss: 0.1646 Acc: 1.0000        
+* Saving interim model while training: swgCQ_simIBMQLocal-at-epoch-12(30)-14072020172453.pth
+[[12.          0.95        0.21095395  1.          0.14515061]]
+     > Phase: train Epoch: 13/30 Iter: 1/31 Batch time: 13.6173
+     > Phase: train Epoch: 13/30 Iter: 2/31 Batch time: 13.5115
+     > Phase: train Epoch: 13/30 Iter: 3/31 Batch time: 13.4718
+     > Phase: train Epoch: 13/30 Iter: 4/31 Batch time: 13.8902
+     > Phase: train Epoch: 13/30 Iter: 5/31 Batch time: 13.4089
+     > Phase: train Epoch: 13/30 Iter: 6/31 Batch time: 13.2718
+     > Phase: train Epoch: 13/30 Iter: 7/31 Batch time: 13.3987
+     > Phase: train Epoch: 13/30 Iter: 8/31 Batch time: 13.3748
+     > Phase: train Epoch: 13/30 Iter: 9/31 Batch time: 13.3477
+     > Phase: train Epoch: 13/30 Iter: 10/31 Batch time: 13.2942
+     > Phase: train Epoch: 13/30 Iter: 11/31 Batch time: 13.3960
+     > Phase: train Epoch: 13/30 Iter: 12/31 Batch time: 13.3901
+     > Phase: train Epoch: 13/30 Iter: 13/31 Batch time: 13.3540
+     > Phase: train Epoch: 13/30 Iter: 14/31 Batch time: 13.3744
+     > Phase: train Epoch: 13/30 Iter: 15/31 Batch time: 13.3424
+     > Phase: train Epoch: 13/30 Iter: 16/31 Batch time: 13.2950
+     > Phase: train Epoch: 13/30 Iter: 17/31 Batch time: 13.2588
+     > Phase: train Epoch: 13/30 Iter: 18/31 Batch time: 13.6260
+     > Phase: train Epoch: 13/30 Iter: 19/31 Batch time: 13.3698
+     > Phase: train Epoch: 13/30 Iter: 20/31 Batch time: 13.2821
+     > Phase: train Epoch: 13/30 Iter: 21/31 Batch time: 13.5454
+     > Phase: train Epoch: 13/30 Iter: 22/31 Batch time: 13.4088
+     > Phase: train Epoch: 13/30 Iter: 23/31 Batch time: 14.8045
+     > Phase: train Epoch: 13/30 Iter: 24/31 Batch time: 14.7762
+     > Phase: train Epoch: 13/30 Iter: 25/31 Batch time: 14.8605
+     > Phase: train Epoch: 13/30 Iter: 26/31 Batch time: 15.4610
+     > Phase: train Epoch: 13/30 Iter: 27/31 Batch time: 14.8750
+     > Phase: train Epoch: 13/30 Iter: 28/31 Batch time: 14.7425
+     > Phase: train Epoch: 13/30 Iter: 29/31 Batch time: 16.2833
+     > Phase: train Epoch: 13/30 Iter: 30/31 Batch time: 14.9207
+     > Phase: train Epoch: 13/30 Loss: 0.2046 Acc: 0.9625        
+     > Phase: validation Epoch: 13/30 Iter: 1/7 Batch time: 0.8747
+     > Phase: validation Epoch: 13/30 Iter: 2/7 Batch time: 0.8747
+     > Phase: validation Epoch: 13/30 Iter: 3/7 Batch time: 0.9402
+     > Phase: validation Epoch: 13/30 Iter: 4/7 Batch time: 0.8557
+     > Phase: validation Epoch: 13/30 Iter: 5/7 Batch time: 0.8420
+     > Phase: validation Epoch: 13/30 Iter: 6/7 Batch time: 0.8677
+     > Phase: validation Epoch: 13/30 Iter: 7/7 Batch time: 0.2394
+     > Phase: validation   Epoch: 13/30 Loss: 0.1470 Acc: 1.0000        
+* Saving interim model while training: swgCQ_simIBMQLocal-at-epoch-13(30)-14072020172453.pth
+[[13.          0.9625      0.20464147  1.          0.14515061]]
+     > Phase: train Epoch: 14/30 Iter: 1/31 Batch time: 15.2426
+     > Phase: train Epoch: 14/30 Iter: 2/31 Batch time: 15.2478
+     > Phase: train Epoch: 14/30 Iter: 3/31 Batch time: 15.1389
+     > Phase: train Epoch: 14/30 Iter: 4/31 Batch time: 15.0924
+     > Phase: train Epoch: 14/30 Iter: 5/31 Batch time: 14.9745
+     > Phase: train Epoch: 14/30 Iter: 6/31 Batch time: 15.0148
+     > Phase: train Epoch: 14/30 Iter: 7/31 Batch time: 14.9469
+     > Phase: train Epoch: 14/30 Iter: 8/31 Batch time: 14.9093
+     > Phase: train Epoch: 14/30 Iter: 9/31 Batch time: 14.9273
+     > Phase: train Epoch: 14/30 Iter: 10/31 Batch time: 14.9302
+     > Phase: train Epoch: 14/30 Iter: 11/31 Batch time: 14.9512
+     > Phase: train Epoch: 14/30 Iter: 12/31 Batch time: 15.0244
+     > Phase: train Epoch: 14/30 Iter: 13/31 Batch time: 15.0160
+     > Phase: train Epoch: 14/30 Iter: 14/31 Batch time: 14.9089
+     > Phase: train Epoch: 14/30 Iter: 15/31 Batch time: 15.9718
+     > Phase: train Epoch: 14/30 Iter: 16/31 Batch time: 16.9667
+     > Phase: train Epoch: 14/30 Iter: 17/31 Batch time: 15.3579
+     > Phase: train Epoch: 14/30 Iter: 18/31 Batch time: 15.3730
+     > Phase: train Epoch: 14/30 Iter: 19/31 Batch time: 15.2348
+     > Phase: train Epoch: 14/30 Iter: 20/31 Batch time: 15.1830
+     > Phase: train Epoch: 14/30 Iter: 21/31 Batch time: 15.4034
+     > Phase: train Epoch: 14/30 Iter: 22/31 Batch time: 15.0510
+     > Phase: train Epoch: 14/30 Iter: 23/31 Batch time: 14.9671
+     > Phase: train Epoch: 14/30 Iter: 24/31 Batch time: 14.8845
+     > Phase: train Epoch: 14/30 Iter: 25/31 Batch time: 15.0118
+     > Phase: train Epoch: 14/30 Iter: 26/31 Batch time: 14.8940
+     > Phase: train Epoch: 14/30 Iter: 27/31 Batch time: 14.8084
+     > Phase: train Epoch: 14/30 Iter: 28/31 Batch time: 14.9994
+     > Phase: train Epoch: 14/30 Iter: 29/31 Batch time: 14.8798
+     > Phase: train Epoch: 14/30 Iter: 30/31 Batch time: 15.4125
+     > Phase: train Epoch: 14/30 Loss: 0.2044 Acc: 0.9625        
+     > Phase: validation Epoch: 14/30 Iter: 1/7 Batch time: 0.8289
+     > Phase: validation Epoch: 14/30 Iter: 2/7 Batch time: 0.7944
+     > Phase: validation Epoch: 14/30 Iter: 3/7 Batch time: 0.8091
+     > Phase: validation Epoch: 14/30 Iter: 4/7 Batch time: 0.8133
+     > Phase: validation Epoch: 14/30 Iter: 5/7 Batch time: 0.8089
+     > Phase: validation Epoch: 14/30 Iter: 6/7 Batch time: 0.8577
+     > Phase: validation Epoch: 14/30 Iter: 7/7 Batch time: 0.2543
+     > Phase: validation   Epoch: 14/30 Loss: 0.1571 Acc: 1.0000        
+* Saving interim model while training: swgCQ_simIBMQLocal-at-epoch-14(30)-14072020172453.pth
+[[14.          0.9625      0.20441247  1.          0.14515061]]
+     > Phase: train Epoch: 15/30 Iter: 1/31 Batch time: 13.6690
+     > Phase: train Epoch: 15/30 Iter: 2/31 Batch time: 13.5523
+     > Phase: train Epoch: 15/30 Iter: 3/31 Batch time: 13.3918
+     > Phase: train Epoch: 15/30 Iter: 4/31 Batch time: 13.5133
+     > Phase: train Epoch: 15/30 Iter: 5/31 Batch time: 13.9884
+     > Phase: train Epoch: 15/30 Iter: 6/31 Batch time: 13.4808
+     > Phase: train Epoch: 15/30 Iter: 7/31 Batch time: 13.5267
+     > Phase: train Epoch: 15/30 Iter: 8/31 Batch time: 13.3695
+     > Phase: train Epoch: 15/30 Iter: 9/31 Batch time: 13.4884
+     > Phase: train Epoch: 15/30 Iter: 10/31 Batch time: 13.3624
+     > Phase: train Epoch: 15/30 Iter: 11/31 Batch time: 13.5349
+     > Phase: train Epoch: 15/30 Iter: 12/31 Batch time: 13.2932
+     > Phase: train Epoch: 15/30 Iter: 13/31 Batch time: 13.4563
+     > Phase: train Epoch: 15/30 Iter: 14/31 Batch time: 13.2906
+     > Phase: train Epoch: 15/30 Iter: 15/31 Batch time: 13.5730
+     > Phase: train Epoch: 15/30 Iter: 16/31 Batch time: 13.2195
+     > Phase: train Epoch: 15/30 Iter: 17/31 Batch time: 13.4583
+     > Phase: train Epoch: 15/30 Iter: 18/31 Batch time: 13.3914
+     > Phase: train Epoch: 15/30 Iter: 19/31 Batch time: 13.4572
+     > Phase: train Epoch: 15/30 Iter: 20/31 Batch time: 13.5317
+     > Phase: train Epoch: 15/30 Iter: 21/31 Batch time: 13.4961
+     > Phase: train Epoch: 15/30 Iter: 22/31 Batch time: 13.3827
+     > Phase: train Epoch: 15/30 Iter: 23/31 Batch time: 13.3981
+     > Phase: train Epoch: 15/30 Iter: 24/31 Batch time: 13.4858
+     > Phase: train Epoch: 15/30 Iter: 25/31 Batch time: 13.3466
+     > Phase: train Epoch: 15/30 Iter: 26/31 Batch time: 13.3386
+     > Phase: train Epoch: 15/30 Iter: 27/31 Batch time: 13.7407
+     > Phase: train Epoch: 15/30 Iter: 28/31 Batch time: 13.4697
+     > Phase: train Epoch: 15/30 Iter: 29/31 Batch time: 13.3966
+     > Phase: train Epoch: 15/30 Iter: 30/31 Batch time: 13.5113
+     > Phase: train Epoch: 15/30 Loss: 0.2243 Acc: 0.9583        
+     > Phase: validation Epoch: 15/30 Iter: 1/7 Batch time: 0.8051
+     > Phase: validation Epoch: 15/30 Iter: 2/7 Batch time: 0.7905
+     > Phase: validation Epoch: 15/30 Iter: 3/7 Batch time: 0.8208
+     > Phase: validation Epoch: 15/30 Iter: 4/7 Batch time: 0.7839
+     > Phase: validation Epoch: 15/30 Iter: 5/7 Batch time: 0.8076
+     > Phase: validation Epoch: 15/30 Iter: 6/7 Batch time: 0.7556
+     > Phase: validation Epoch: 15/30 Iter: 7/7 Batch time: 0.2589
+     > Phase: validation   Epoch: 15/30 Loss: 0.1659 Acc: 1.0000        
+* Saving interim model while training: swgCQ_simIBMQLocal-at-epoch-15(30)-14072020172453.pth
+[[15.          0.9625      0.20441247  1.          0.14515061]]
+     > Phase: train Epoch: 16/30 Iter: 1/31 Batch time: 13.4769
+     > Phase: train Epoch: 16/30 Iter: 2/31 Batch time: 13.5087
+     > Phase: train Epoch: 16/30 Iter: 3/31 Batch time: 13.5313
+     > Phase: train Epoch: 16/30 Iter: 4/31 Batch time: 13.3408
+     > Phase: train Epoch: 16/30 Iter: 5/31 Batch time: 13.2772
+     > Phase: train Epoch: 16/30 Iter: 6/31 Batch time: 13.4090
+     > Phase: train Epoch: 16/30 Iter: 7/31 Batch time: 13.3328
+     > Phase: train Epoch: 16/30 Iter: 8/31 Batch time: 13.3981
+     > Phase: train Epoch: 16/30 Iter: 9/31 Batch time: 13.4089
+     > Phase: train Epoch: 16/30 Iter: 10/31 Batch time: 13.4163
+     > Phase: train Epoch: 16/30 Iter: 11/31 Batch time: 13.4356
+     > Phase: train Epoch: 16/30 Iter: 12/31 Batch time: 13.3896
+     > Phase: train Epoch: 16/30 Iter: 13/31 Batch time: 13.4002
+     > Phase: train Epoch: 16/30 Iter: 14/31 Batch time: 13.4483
+     > Phase: train Epoch: 16/30 Iter: 15/31 Batch time: 13.4095
+     > Phase: train Epoch: 16/30 Iter: 16/31 Batch time: 13.3290
+     > Phase: train Epoch: 16/30 Iter: 17/31 Batch time: 13.3718
+     > Phase: train Epoch: 16/30 Iter: 18/31 Batch time: 13.8116
+     > Phase: train Epoch: 16/30 Iter: 19/31 Batch time: 13.4695
+     > Phase: train Epoch: 16/30 Iter: 20/31 Batch time: 13.4069
+     > Phase: train Epoch: 16/30 Iter: 21/31 Batch time: 13.4154
+     > Phase: train Epoch: 16/30 Iter: 22/31 Batch time: 13.1827
+     > Phase: train Epoch: 16/30 Iter: 23/31 Batch time: 13.5263
+     > Phase: train Epoch: 16/30 Iter: 24/31 Batch time: 13.3283
+     > Phase: train Epoch: 16/30 Iter: 25/31 Batch time: 13.7821
+     > Phase: train Epoch: 16/30 Iter: 26/31 Batch time: 13.2720
+     > Phase: train Epoch: 16/30 Iter: 27/31 Batch time: 13.4273
+     > Phase: train Epoch: 16/30 Iter: 28/31 Batch time: 13.4714
+     > Phase: train Epoch: 16/30 Iter: 29/31 Batch time: 13.3895
+     > Phase: train Epoch: 16/30 Iter: 30/31 Batch time: 13.5262
+     > Phase: train Epoch: 16/30 Loss: 0.2537 Acc: 0.9292        
+     > Phase: validation Epoch: 16/30 Iter: 1/7 Batch time: 0.8154
+     > Phase: validation Epoch: 16/30 Iter: 2/7 Batch time: 0.8106
+     > Phase: validation Epoch: 16/30 Iter: 3/7 Batch time: 0.8809
+     > Phase: validation Epoch: 16/30 Iter: 4/7 Batch time: 0.7934
+     > Phase: validation Epoch: 16/30 Iter: 5/7 Batch time: 0.8312
+     > Phase: validation Epoch: 16/30 Iter: 6/7 Batch time: 0.8544
+     > Phase: validation Epoch: 16/30 Iter: 7/7 Batch time: 0.2324
+     > Phase: validation   Epoch: 16/30 Loss: 0.1597 Acc: 1.0000        
+* Saving interim model while training: swgCQ_simIBMQLocal-at-epoch-16(30)-14072020172453.pth
+[[16.          0.9625      0.20441247  1.          0.14515061]]
+     > Phase: train Epoch: 17/30 Iter: 1/31 Batch time: 13.6943
+     > Phase: train Epoch: 17/30 Iter: 2/31 Batch time: 13.5834
+     > Phase: train Epoch: 17/30 Iter: 3/31 Batch time: 13.4156
+     > Phase: train Epoch: 17/30 Iter: 4/31 Batch time: 13.2985
+     > Phase: train Epoch: 17/30 Iter: 5/31 Batch time: 13.4841
+     > Phase: train Epoch: 17/30 Iter: 6/31 Batch time: 13.5354
+     > Phase: train Epoch: 17/30 Iter: 7/31 Batch time: 13.3182
+     > Phase: train Epoch: 17/30 Iter: 8/31 Batch time: 13.5296
+     > Phase: train Epoch: 17/30 Iter: 9/31 Batch time: 13.3539
+     > Phase: train Epoch: 17/30 Iter: 10/31 Batch time: 13.7633
+     > Phase: train Epoch: 17/30 Iter: 11/31 Batch time: 13.4689
+     > Phase: train Epoch: 17/30 Iter: 12/31 Batch time: 13.4016
+     > Phase: train Epoch: 17/30 Iter: 13/31 Batch time: 13.2923
+     > Phase: train Epoch: 17/30 Iter: 14/31 Batch time: 13.2771
+     > Phase: train Epoch: 17/30 Iter: 15/31 Batch time: 13.5206
+     > Phase: train Epoch: 17/30 Iter: 16/31 Batch time: 13.4693
+     > Phase: train Epoch: 17/30 Iter: 17/31 Batch time: 13.3716
+     > Phase: train Epoch: 17/30 Iter: 18/31 Batch time: 13.2665
+     > Phase: train Epoch: 17/30 Iter: 19/31 Batch time: 13.4477
+     > Phase: train Epoch: 17/30 Iter: 20/31 Batch time: 13.2858
+     > Phase: train Epoch: 17/30 Iter: 21/31 Batch time: 13.4695
+     > Phase: train Epoch: 17/30 Iter: 22/31 Batch time: 13.3120
+     > Phase: train Epoch: 17/30 Iter: 23/31 Batch time: 13.4184
+     > Phase: train Epoch: 17/30 Iter: 24/31 Batch time: 13.3393
+     > Phase: train Epoch: 17/30 Iter: 25/31 Batch time: 13.3604
+     > Phase: train Epoch: 17/30 Iter: 26/31 Batch time: 13.4182
+     > Phase: train Epoch: 17/30 Iter: 27/31 Batch time: 13.3596
+     > Phase: train Epoch: 17/30 Iter: 28/31 Batch time: 13.3499
+     > Phase: train Epoch: 17/30 Iter: 29/31 Batch time: 13.3291
+     > Phase: train Epoch: 17/30 Iter: 30/31 Batch time: 13.6235
+     > Phase: train Epoch: 17/30 Loss: 0.2053 Acc: 0.9542        
+     > Phase: validation Epoch: 17/30 Iter: 1/7 Batch time: 0.8064
+     > Phase: validation Epoch: 17/30 Iter: 2/7 Batch time: 0.8408
+     > Phase: validation Epoch: 17/30 Iter: 3/7 Batch time: 0.8094
+     > Phase: validation Epoch: 17/30 Iter: 4/7 Batch time: 0.7939
+     > Phase: validation Epoch: 17/30 Iter: 5/7 Batch time: 0.7949
+     > Phase: validation Epoch: 17/30 Iter: 6/7 Batch time: 0.8076
+     > Phase: validation Epoch: 17/30 Iter: 7/7 Batch time: 0.2264
+     > Phase: validation   Epoch: 17/30 Loss: 0.1530 Acc: 1.0000        
+* Saving interim model while training: swgCQ_simIBMQLocal-at-epoch-17(30)-14072020172453.pth
+[[17.          0.9625      0.20441247  1.          0.14515061]]
+     > Phase: train Epoch: 18/30 Iter: 1/31 Batch time: 14.0020
+     > Phase: train Epoch: 18/30 Iter: 2/31 Batch time: 13.7705
+     > Phase: train Epoch: 18/30 Iter: 3/31 Batch time: 13.5565
+     > Phase: train Epoch: 18/30 Iter: 4/31 Batch time: 13.6223
+     > Phase: train Epoch: 18/30 Iter: 5/31 Batch time: 13.3059
+     > Phase: train Epoch: 18/30 Iter: 6/31 Batch time: 13.5959
+     > Phase: train Epoch: 18/30 Iter: 7/31 Batch time: 13.4492
+     > Phase: train Epoch: 18/30 Iter: 8/31 Batch time: 13.6183
+     > Phase: train Epoch: 18/30 Iter: 9/31 Batch time: 13.4289
+     > Phase: train Epoch: 18/30 Iter: 10/31 Batch time: 13.6808
+     > Phase: train Epoch: 18/30 Iter: 11/31 Batch time: 13.4884
+     > Phase: train Epoch: 18/30 Iter: 12/31 Batch time: 13.5400
+     > Phase: train Epoch: 18/30 Iter: 13/31 Batch time: 13.3450
+     > Phase: train Epoch: 18/30 Iter: 14/31 Batch time: 13.7684
+     > Phase: train Epoch: 18/30 Iter: 15/31 Batch time: 13.4681
+     > Phase: train Epoch: 18/30 Iter: 16/31 Batch time: 13.5076
+     > Phase: train Epoch: 18/30 Iter: 17/31 Batch time: 13.4828
+     > Phase: train Epoch: 18/30 Iter: 18/31 Batch time: 13.5910
+     > Phase: train Epoch: 18/30 Iter: 19/31 Batch time: 13.6056
+     > Phase: train Epoch: 18/30 Iter: 20/31 Batch time: 13.4500
+     > Phase: train Epoch: 18/30 Iter: 21/31 Batch time: 13.5009
+     > Phase: train Epoch: 18/30 Iter: 22/31 Batch time: 13.5142
+     > Phase: train Epoch: 18/30 Iter: 23/31 Batch time: 13.8254
+     > Phase: train Epoch: 18/30 Iter: 24/31 Batch time: 13.6263
+     > Phase: train Epoch: 18/30 Iter: 25/31 Batch time: 13.6093
+     > Phase: train Epoch: 18/30 Iter: 26/31 Batch time: 13.4560
+     > Phase: train Epoch: 18/30 Iter: 27/31 Batch time: 13.6282
+     > Phase: train Epoch: 18/30 Iter: 28/31 Batch time: 13.6107
+     > Phase: train Epoch: 18/30 Iter: 29/31 Batch time: 13.8224
+     > Phase: train Epoch: 18/30 Iter: 30/31 Batch time: 13.5665
+     > Phase: train Epoch: 18/30 Loss: 0.1967 Acc: 0.9708        
+     > Phase: validation Epoch: 18/30 Iter: 1/7 Batch time: 0.8128
+     > Phase: validation Epoch: 18/30 Iter: 2/7 Batch time: 0.8179
+     > Phase: validation Epoch: 18/30 Iter: 3/7 Batch time: 0.7971
+     > Phase: validation Epoch: 18/30 Iter: 4/7 Batch time: 0.8199
+     > Phase: validation Epoch: 18/30 Iter: 5/7 Batch time: 0.7684
+     > Phase: validation Epoch: 18/30 Iter: 6/7 Batch time: 0.7969
+     > Phase: validation Epoch: 18/30 Iter: 7/7 Batch time: 0.2404
+     > Phase: validation   Epoch: 18/30 Loss: 0.1460 Acc: 1.0000        
+* Saving interim model while training: swgCQ_simIBMQLocal-at-epoch-18(30)-14072020172453.pth
+[[18.          0.97083333  0.19672366  1.          0.14515061]]
+     > Phase: train Epoch: 19/30 Iter: 1/31 Batch time: 13.6351
+     > Phase: train Epoch: 19/30 Iter: 2/31 Batch time: 13.4828
+     > Phase: train Epoch: 19/30 Iter: 3/31 Batch time: 13.6240
+     > Phase: train Epoch: 19/30 Iter: 4/31 Batch time: 13.4492
+     > Phase: train Epoch: 19/30 Iter: 5/31 Batch time: 13.6159
+     > Phase: train Epoch: 19/30 Iter: 6/31 Batch time: 13.5426
+     > Phase: train Epoch: 19/30 Iter: 7/31 Batch time: 13.5460
+     > Phase: train Epoch: 19/30 Iter: 8/31 Batch time: 13.3660
+     > Phase: train Epoch: 19/30 Iter: 9/31 Batch time: 13.5399
+     > Phase: train Epoch: 19/30 Iter: 10/31 Batch time: 13.4598
+     > Phase: train Epoch: 19/30 Iter: 11/31 Batch time: 13.4654
+     > Phase: train Epoch: 19/30 Iter: 12/31 Batch time: 14.9588
+     > Phase: train Epoch: 19/30 Iter: 13/31 Batch time: 13.6068
+     > Phase: train Epoch: 19/30 Iter: 14/31 Batch time: 13.5106
+     > Phase: train Epoch: 19/30 Iter: 15/31 Batch time: 13.9747
+     > Phase: train Epoch: 19/30 Iter: 16/31 Batch time: 13.5690
+     > Phase: train Epoch: 19/30 Iter: 17/31 Batch time: 13.4990
+     > Phase: train Epoch: 19/30 Iter: 18/31 Batch time: 13.4653
+     > Phase: train Epoch: 19/30 Iter: 19/31 Batch time: 13.5482
+     > Phase: train Epoch: 19/30 Iter: 20/31 Batch time: 13.6318
+     > Phase: train Epoch: 19/30 Iter: 21/31 Batch time: 13.3608
+     > Phase: train Epoch: 19/30 Iter: 22/31 Batch time: 13.5489
+     > Phase: train Epoch: 19/30 Iter: 23/31 Batch time: 13.3564
+     > Phase: train Epoch: 19/30 Iter: 24/31 Batch time: 13.5171
+     > Phase: train Epoch: 19/30 Iter: 25/31 Batch time: 13.7149
+     > Phase: train Epoch: 19/30 Iter: 26/31 Batch time: 13.5190
+     > Phase: train Epoch: 19/30 Iter: 27/31 Batch time: 13.4723
+     > Phase: train Epoch: 19/30 Iter: 28/31 Batch time: 13.5486
+     > Phase: train Epoch: 19/30 Iter: 29/31 Batch time: 13.4651
+     > Phase: train Epoch: 19/30 Iter: 30/31 Batch time: 13.8730
+     > Phase: train Epoch: 19/30 Loss: 0.1998 Acc: 0.9583        
+     > Phase: validation Epoch: 19/30 Iter: 1/7 Batch time: 0.7685
+     > Phase: validation Epoch: 19/30 Iter: 2/7 Batch time: 0.8298
+     > Phase: validation Epoch: 19/30 Iter: 3/7 Batch time: 0.7478
+     > Phase: validation Epoch: 19/30 Iter: 4/7 Batch time: 0.8268
+     > Phase: validation Epoch: 19/30 Iter: 5/7 Batch time: 0.8299
+     > Phase: validation Epoch: 19/30 Iter: 6/7 Batch time: 0.7957
+     > Phase: validation Epoch: 19/30 Iter: 7/7 Batch time: 0.2154
+     > Phase: validation   Epoch: 19/30 Loss: 0.1491 Acc: 1.0000        
+* Saving interim model while training: swgCQ_simIBMQLocal-at-epoch-19(30)-14072020172453.pth
+[[19.          0.97083333  0.19672366  1.          0.14515061]]
+     > Phase: train Epoch: 20/30 Iter: 1/31 Batch time: 13.5585
+     > Phase: train Epoch: 20/30 Iter: 2/31 Batch time: 13.7190
+     > Phase: train Epoch: 20/30 Iter: 3/31 Batch time: 13.7842
+     > Phase: train Epoch: 20/30 Iter: 4/31 Batch time: 14.8463
+     > Phase: train Epoch: 20/30 Iter: 5/31 Batch time: 15.2003
+     > Phase: train Epoch: 20/30 Iter: 6/31 Batch time: 15.4851
+     > Phase: train Epoch: 20/30 Iter: 7/31 Batch time: 15.1550
+     > Phase: train Epoch: 20/30 Iter: 8/31 Batch time: 14.9845
+     > Phase: train Epoch: 20/30 Iter: 9/31 Batch time: 15.0168
+     > Phase: train Epoch: 20/30 Iter: 10/31 Batch time: 15.7669
+     > Phase: train Epoch: 20/30 Iter: 11/31 Batch time: 16.6140
+     > Phase: train Epoch: 20/30 Iter: 12/31 Batch time: 15.5142
+     > Phase: train Epoch: 20/30 Iter: 13/31 Batch time: 15.1966
+     > Phase: train Epoch: 20/30 Iter: 14/31 Batch time: 15.2785
+     > Phase: train Epoch: 20/30 Iter: 15/31 Batch time: 15.6690
+     > Phase: train Epoch: 20/30 Iter: 16/31 Batch time: 14.1341
+     > Phase: train Epoch: 20/30 Iter: 17/31 Batch time: 13.7305
+     > Phase: train Epoch: 20/30 Iter: 18/31 Batch time: 14.1981
+     > Phase: train Epoch: 20/30 Iter: 19/31 Batch time: 13.7072
+     > Phase: train Epoch: 20/30 Iter: 20/31 Batch time: 13.6754
+     > Phase: train Epoch: 20/30 Iter: 21/31 Batch time: 13.6219
+     > Phase: train Epoch: 20/30 Iter: 22/31 Batch time: 13.6201
+     > Phase: train Epoch: 20/30 Iter: 23/31 Batch time: 13.5153
+     > Phase: train Epoch: 20/30 Iter: 24/31 Batch time: 13.4978
+     > Phase: train Epoch: 20/30 Iter: 25/31 Batch time: 13.5090
+     > Phase: train Epoch: 20/30 Iter: 26/31 Batch time: 13.6844
+     > Phase: train Epoch: 20/30 Iter: 27/31 Batch time: 13.8256
+     > Phase: train Epoch: 20/30 Iter: 28/31 Batch time: 13.4630
+     > Phase: train Epoch: 20/30 Iter: 29/31 Batch time: 13.5436
+     > Phase: train Epoch: 20/30 Iter: 30/31 Batch time: 13.5931
+     > Phase: train Epoch: 20/30 Loss: 0.2276 Acc: 0.9458        
+     > Phase: validation Epoch: 20/30 Iter: 1/7 Batch time: 0.7855
+     > Phase: validation Epoch: 20/30 Iter: 2/7 Batch time: 0.7640
+     > Phase: validation Epoch: 20/30 Iter: 3/7 Batch time: 0.8188
+     > Phase: validation Epoch: 20/30 Iter: 4/7 Batch time: 0.7732
+     > Phase: validation Epoch: 20/30 Iter: 5/7 Batch time: 0.7695
+     > Phase: validation Epoch: 20/30 Iter: 6/7 Batch time: 0.7859
+     > Phase: validation Epoch: 20/30 Iter: 7/7 Batch time: 0.3551
+     > Phase: validation   Epoch: 20/30 Loss: 0.1457 Acc: 1.0000        
+* Saving interim model while training: swgCQ_simIBMQLocal-at-epoch-20(30)-14072020172453.pth
+[[20.          0.97083333  0.19672366  1.          0.14515061]]
+     > Phase: train Epoch: 21/30 Iter: 1/31 Batch time: 13.8540
+     > Phase: train Epoch: 21/30 Iter: 2/31 Batch time: 14.1056
+     > Phase: train Epoch: 21/30 Iter: 3/31 Batch time: 13.6356
+     > Phase: train Epoch: 21/30 Iter: 4/31 Batch time: 13.5005
+     > Phase: train Epoch: 21/30 Iter: 5/31 Batch time: 13.6541
+     > Phase: train Epoch: 21/30 Iter: 6/31 Batch time: 13.5038
+     > Phase: train Epoch: 21/30 Iter: 7/31 Batch time: 15.2147
+     > Phase: train Epoch: 21/30 Iter: 8/31 Batch time: 15.0044
+     > Phase: train Epoch: 21/30 Iter: 9/31 Batch time: 15.1197
+     > Phase: train Epoch: 21/30 Iter: 10/31 Batch time: 14.9781
+     > Phase: train Epoch: 21/30 Iter: 11/31 Batch time: 15.0079
+     > Phase: train Epoch: 21/30 Iter: 12/31 Batch time: 15.0727
+     > Phase: train Epoch: 21/30 Iter: 13/31 Batch time: 15.1376
+     > Phase: train Epoch: 21/30 Iter: 14/31 Batch time: 15.0152
+     > Phase: train Epoch: 21/30 Iter: 15/31 Batch time: 15.0567
+     > Phase: train Epoch: 21/30 Iter: 16/31 Batch time: 15.1750
+     > Phase: train Epoch: 21/30 Iter: 17/31 Batch time: 16.0141
+     > Phase: train Epoch: 21/30 Iter: 18/31 Batch time: 15.0786
+     > Phase: train Epoch: 21/30 Iter: 19/31 Batch time: 15.3725
+     > Phase: train Epoch: 21/30 Iter: 20/31 Batch time: 15.2118
+     > Phase: train Epoch: 21/30 Iter: 21/31 Batch time: 15.4955
+     > Phase: train Epoch: 21/30 Iter: 22/31 Batch time: 15.2248
+     > Phase: train Epoch: 21/30 Iter: 23/31 Batch time: 15.3465
+     > Phase: train Epoch: 21/30 Iter: 24/31 Batch time: 15.0255
+     > Phase: train Epoch: 21/30 Iter: 25/31 Batch time: 15.1985
+     > Phase: train Epoch: 21/30 Iter: 26/31 Batch time: 15.0994
+     > Phase: train Epoch: 21/30 Iter: 27/31 Batch time: 15.0037
+     > Phase: train Epoch: 21/30 Iter: 28/31 Batch time: 15.1104
+     > Phase: train Epoch: 21/30 Iter: 29/31 Batch time: 15.0979
+     > Phase: train Epoch: 21/30 Iter: 30/31 Batch time: 15.0830
+     > Phase: train Epoch: 21/30 Loss: 0.2026 Acc: 0.9667        
+     > Phase: validation Epoch: 21/30 Iter: 1/7 Batch time: 0.8428
+     > Phase: validation Epoch: 21/30 Iter: 2/7 Batch time: 0.9455
+     > Phase: validation Epoch: 21/30 Iter: 3/7 Batch time: 0.8637
+     > Phase: validation Epoch: 21/30 Iter: 4/7 Batch time: 0.8687
+     > Phase: validation Epoch: 21/30 Iter: 5/7 Batch time: 0.8607
+     > Phase: validation Epoch: 21/30 Iter: 6/7 Batch time: 0.8892
+     > Phase: validation Epoch: 21/30 Iter: 7/7 Batch time: 0.2653
+     > Phase: validation   Epoch: 21/30 Loss: 0.1494 Acc: 1.0000        
+* Saving interim model while training: swgCQ_simIBMQLocal-at-epoch-21(30)-14072020172453.pth
+[[21.          0.97083333  0.19672366  1.          0.14515061]]
+     > Phase: train Epoch: 22/30 Iter: 1/31 Batch time: 15.3889
+     > Phase: train Epoch: 22/30 Iter: 2/31 Batch time: 15.2433
+     > Phase: train Epoch: 22/30 Iter: 3/31 Batch time: 15.2670
+     > Phase: train Epoch: 22/30 Iter: 4/31 Batch time: 15.2955
+     > Phase: train Epoch: 22/30 Iter: 5/31 Batch time: 15.3624
+     > Phase: train Epoch: 22/30 Iter: 6/31 Batch time: 15.9881
+     > Phase: train Epoch: 22/30 Iter: 7/31 Batch time: 15.3954
+     > Phase: train Epoch: 22/30 Iter: 8/31 Batch time: 15.2765
+     > Phase: train Epoch: 22/30 Iter: 9/31 Batch time: 15.3335
+     > Phase: train Epoch: 22/30 Iter: 10/31 Batch time: 15.0540
+     > Phase: train Epoch: 22/30 Iter: 11/31 Batch time: 15.2200
+     > Phase: train Epoch: 22/30 Iter: 12/31 Batch time: 15.0890
+     > Phase: train Epoch: 22/30 Iter: 13/31 Batch time: 15.1361
+     > Phase: train Epoch: 22/30 Iter: 14/31 Batch time: 15.1147
+     > Phase: train Epoch: 22/30 Iter: 15/31 Batch time: 15.0111
+     > Phase: train Epoch: 22/30 Iter: 16/31 Batch time: 13.6498
+     > Phase: train Epoch: 22/30 Iter: 17/31 Batch time: 13.5678
+     > Phase: train Epoch: 22/30 Iter: 18/31 Batch time: 13.5926
+     > Phase: train Epoch: 22/30 Iter: 19/31 Batch time: 13.6602
+     > Phase: train Epoch: 22/30 Iter: 20/31 Batch time: 13.6537
+     > Phase: train Epoch: 22/30 Iter: 21/31 Batch time: 13.5353
+     > Phase: train Epoch: 22/30 Iter: 22/31 Batch time: 13.4396
+     > Phase: train Epoch: 22/30 Iter: 23/31 Batch time: 13.5055
+     > Phase: train Epoch: 22/30 Iter: 24/31 Batch time: 13.5827
+     > Phase: train Epoch: 22/30 Iter: 25/31 Batch time: 13.4660
+     > Phase: train Epoch: 22/30 Iter: 26/31 Batch time: 13.7483
+     > Phase: train Epoch: 22/30 Iter: 27/31 Batch time: 13.6945
+     > Phase: train Epoch: 22/30 Iter: 28/31 Batch time: 13.4573
+     > Phase: train Epoch: 22/30 Iter: 29/31 Batch time: 13.4547
+     > Phase: train Epoch: 22/30 Iter: 30/31 Batch time: 13.4268
+     > Phase: train Epoch: 22/30 Loss: 0.1971 Acc: 0.9625        
+     > Phase: validation Epoch: 22/30 Iter: 1/7 Batch time: 0.8622
+     > Phase: validation Epoch: 22/30 Iter: 2/7 Batch time: 0.7543
+     > Phase: validation Epoch: 22/30 Iter: 3/7 Batch time: 0.8924
+     > Phase: validation Epoch: 22/30 Iter: 4/7 Batch time: 0.7720
+     > Phase: validation Epoch: 22/30 Iter: 5/7 Batch time: 0.9076
+     > Phase: validation Epoch: 22/30 Iter: 6/7 Batch time: 0.7922
+     > Phase: validation Epoch: 22/30 Iter: 7/7 Batch time: 0.2852
+     > Phase: validation   Epoch: 22/30 Loss: 0.1436 Acc: 1.0000        
+* Saving interim model while training: swgCQ_simIBMQLocal-at-epoch-22(30)-14072020172453.pth
+[[22.          0.97083333  0.19672366  1.          0.14358226]]
+     > Phase: train Epoch: 23/30 Iter: 1/31 Batch time: 13.5390
+     > Phase: train Epoch: 23/30 Iter: 2/31 Batch time: 13.5388
+     > Phase: train Epoch: 23/30 Iter: 3/31 Batch time: 13.3685
+     > Phase: train Epoch: 23/30 Iter: 4/31 Batch time: 13.6625
+     > Phase: train Epoch: 23/30 Iter: 5/31 Batch time: 13.4380
+     > Phase: train Epoch: 23/30 Iter: 6/31 Batch time: 13.4962
+     > Phase: train Epoch: 23/30 Iter: 7/31 Batch time: 13.4875
+     > Phase: train Epoch: 23/30 Iter: 8/31 Batch time: 13.5696
+     > Phase: train Epoch: 23/30 Iter: 9/31 Batch time: 13.4650
+     > Phase: train Epoch: 23/30 Iter: 10/31 Batch time: 13.5462
+     > Phase: train Epoch: 23/30 Iter: 11/31 Batch time: 13.5718
+     > Phase: train Epoch: 23/30 Iter: 12/31 Batch time: 13.4734
+     > Phase: train Epoch: 23/30 Iter: 13/31 Batch time: 13.4672
+     > Phase: train Epoch: 23/30 Iter: 14/31 Batch time: 13.4281
+     > Phase: train Epoch: 23/30 Iter: 15/31 Batch time: 13.4542
+     > Phase: train Epoch: 23/30 Iter: 16/31 Batch time: 13.4888
+     > Phase: train Epoch: 23/30 Iter: 17/31 Batch time: 13.4084
+     > Phase: train Epoch: 23/30 Iter: 18/31 Batch time: 13.8317
+     > Phase: train Epoch: 23/30 Iter: 19/31 Batch time: 13.6021
+     > Phase: train Epoch: 23/30 Iter: 20/31 Batch time: 13.4265
+     > Phase: train Epoch: 23/30 Iter: 21/31 Batch time: 13.5649
+     > Phase: train Epoch: 23/30 Iter: 22/31 Batch time: 13.4585
+     > Phase: train Epoch: 23/30 Iter: 23/31 Batch time: 13.5790
+     > Phase: train Epoch: 23/30 Iter: 24/31 Batch time: 13.2982
+     > Phase: train Epoch: 23/30 Iter: 25/31 Batch time: 13.4712
+     > Phase: train Epoch: 23/30 Iter: 26/31 Batch time: 13.5029
+     > Phase: train Epoch: 23/30 Iter: 27/31 Batch time: 13.4376
+     > Phase: train Epoch: 23/30 Iter: 28/31 Batch time: 13.6090
+     > Phase: train Epoch: 23/30 Iter: 29/31 Batch time: 13.4620
+     > Phase: train Epoch: 23/30 Iter: 30/31 Batch time: 13.5140
+     > Phase: train Epoch: 23/30 Loss: 0.2019 Acc: 0.9667        
+     > Phase: validation Epoch: 23/30 Iter: 1/7 Batch time: 0.8248
+     > Phase: validation Epoch: 23/30 Iter: 2/7 Batch time: 0.8378
+     > Phase: validation Epoch: 23/30 Iter: 3/7 Batch time: 0.7740
+     > Phase: validation Epoch: 23/30 Iter: 4/7 Batch time: 0.7797
+     > Phase: validation Epoch: 23/30 Iter: 5/7 Batch time: 0.8158
+     > Phase: validation Epoch: 23/30 Iter: 6/7 Batch time: 0.7710
+     > Phase: validation Epoch: 23/30 Iter: 7/7 Batch time: 0.2174
+     > Phase: validation   Epoch: 23/30 Loss: 0.1470 Acc: 1.0000        
+* Saving interim model while training: swgCQ_simIBMQLocal-at-epoch-23(30)-14072020172453.pth
+[[23.          0.97083333  0.19672366  1.          0.14358226]]
+     > Phase: train Epoch: 24/30 Iter: 1/31 Batch time: 13.5343
+     > Phase: train Epoch: 24/30 Iter: 2/31 Batch time: 13.5170
+     > Phase: train Epoch: 24/30 Iter: 3/31 Batch time: 13.6917
+     > Phase: train Epoch: 24/30 Iter: 4/31 Batch time: 13.4427
+     > Phase: train Epoch: 24/30 Iter: 5/31 Batch time: 13.2477
+     > Phase: train Epoch: 24/30 Iter: 6/31 Batch time: 13.5397
+     > Phase: train Epoch: 24/30 Iter: 7/31 Batch time: 13.4563
+     > Phase: train Epoch: 24/30 Iter: 8/31 Batch time: 13.4225
+     > Phase: train Epoch: 24/30 Iter: 9/31 Batch time: 13.8592
+     > Phase: train Epoch: 24/30 Iter: 10/31 Batch time: 13.6261
+     > Phase: train Epoch: 24/30 Iter: 11/31 Batch time: 13.5781
+     > Phase: train Epoch: 24/30 Iter: 12/31 Batch time: 13.4045
+     > Phase: train Epoch: 24/30 Iter: 13/31 Batch time: 13.5125
+     > Phase: train Epoch: 24/30 Iter: 14/31 Batch time: 13.7795
+     > Phase: train Epoch: 24/30 Iter: 15/31 Batch time: 14.4420
+     > Phase: train Epoch: 24/30 Iter: 16/31 Batch time: 13.7731
+     > Phase: train Epoch: 24/30 Iter: 17/31 Batch time: 13.5202
+     > Phase: train Epoch: 24/30 Iter: 18/31 Batch time: 13.5672
+     > Phase: train Epoch: 24/30 Iter: 19/31 Batch time: 13.4981
+     > Phase: train Epoch: 24/30 Iter: 20/31 Batch time: 13.5351
+     > Phase: train Epoch: 24/30 Iter: 21/31 Batch time: 13.4064
+     > Phase: train Epoch: 24/30 Iter: 22/31 Batch time: 13.4377
+     > Phase: train Epoch: 24/30 Iter: 23/31 Batch time: 13.4977
+     > Phase: train Epoch: 24/30 Iter: 24/31 Batch time: 13.6038
+     > Phase: train Epoch: 24/30 Iter: 25/31 Batch time: 13.5148
+     > Phase: train Epoch: 24/30 Iter: 26/31 Batch time: 13.3907
+     > Phase: train Epoch: 24/30 Iter: 27/31 Batch time: 13.3963
+     > Phase: train Epoch: 24/30 Iter: 28/31 Batch time: 13.4973
+     > Phase: train Epoch: 24/30 Iter: 29/31 Batch time: 13.4553
+     > Phase: train Epoch: 24/30 Iter: 30/31 Batch time: 13.4285
+     > Phase: train Epoch: 24/30 Loss: 0.2048 Acc: 0.9500        
+     > Phase: validation Epoch: 24/30 Iter: 1/7 Batch time: 0.7859
+     > Phase: validation Epoch: 24/30 Iter: 2/7 Batch time: 0.7550
+     > Phase: validation Epoch: 24/30 Iter: 3/7 Batch time: 0.7286
+     > Phase: validation Epoch: 24/30 Iter: 4/7 Batch time: 0.7731
+     > Phase: validation Epoch: 24/30 Iter: 5/7 Batch time: 0.8002
+     > Phase: validation Epoch: 24/30 Iter: 6/7 Batch time: 0.7651
+     > Phase: validation Epoch: 24/30 Iter: 7/7 Batch time: 0.2374
+     > Phase: validation   Epoch: 24/30 Loss: 0.1472 Acc: 1.0000        
+* Saving interim model while training: swgCQ_simIBMQLocal-at-epoch-24(30)-14072020172453.pth
+[[24.          0.97083333  0.19672366  1.          0.14358226]]
+     > Phase: train Epoch: 25/30 Iter: 1/31 Batch time: 14.0252
+     > Phase: train Epoch: 25/30 Iter: 2/31 Batch time: 13.8844
+     > Phase: train Epoch: 25/30 Iter: 3/31 Batch time: 13.6586
+     > Phase: train Epoch: 25/30 Iter: 4/31 Batch time: 13.5310
+     > Phase: train Epoch: 25/30 Iter: 5/31 Batch time: 13.5325
+     > Phase: train Epoch: 25/30 Iter: 6/31 Batch time: 14.2647
+     > Phase: train Epoch: 25/30 Iter: 7/31 Batch time: 15.2160
+     > Phase: train Epoch: 25/30 Iter: 8/31 Batch time: 15.2937
+     > Phase: train Epoch: 25/30 Iter: 9/31 Batch time: 15.3045
+     > Phase: train Epoch: 25/30 Iter: 10/31 Batch time: 15.2495
+     > Phase: train Epoch: 25/30 Iter: 11/31 Batch time: 15.0694
+     > Phase: train Epoch: 25/30 Iter: 12/31 Batch time: 15.0466
+     > Phase: train Epoch: 25/30 Iter: 13/31 Batch time: 15.0923
+     > Phase: train Epoch: 25/30 Iter: 14/31 Batch time: 15.4858
+     > Phase: train Epoch: 25/30 Iter: 15/31 Batch time: 15.0916
+     > Phase: train Epoch: 25/30 Iter: 16/31 Batch time: 15.1784
+     > Phase: train Epoch: 25/30 Iter: 17/31 Batch time: 15.0155
+     > Phase: train Epoch: 25/30 Iter: 18/31 Batch time: 15.0743
+     > Phase: train Epoch: 25/30 Iter: 19/31 Batch time: 15.2485
+     > Phase: train Epoch: 25/30 Iter: 20/31 Batch time: 15.0079
+     > Phase: train Epoch: 25/30 Iter: 21/31 Batch time: 15.9474
+     > Phase: train Epoch: 25/30 Iter: 22/31 Batch time: 15.1607
+     > Phase: train Epoch: 25/30 Iter: 23/31 Batch time: 15.3789
+     > Phase: train Epoch: 25/30 Iter: 24/31 Batch time: 13.6939
+     > Phase: train Epoch: 25/30 Iter: 25/31 Batch time: 13.7847
+     > Phase: train Epoch: 25/30 Iter: 26/31 Batch time: 13.4875
+     > Phase: train Epoch: 25/30 Iter: 27/31 Batch time: 13.6525
+     > Phase: train Epoch: 25/30 Iter: 28/31 Batch time: 13.5328
+     > Phase: train Epoch: 25/30 Iter: 29/31 Batch time: 13.6027
+     > Phase: train Epoch: 25/30 Iter: 30/31 Batch time: 13.5523
+     > Phase: train Epoch: 25/30 Loss: 0.1922 Acc: 0.9542        
+     > Phase: validation Epoch: 25/30 Iter: 1/7 Batch time: 0.7919
+     > Phase: validation Epoch: 25/30 Iter: 2/7 Batch time: 0.8118
+     > Phase: validation Epoch: 25/30 Iter: 3/7 Batch time: 0.8208
+     > Phase: validation Epoch: 25/30 Iter: 4/7 Batch time: 0.8059
+     > Phase: validation Epoch: 25/30 Iter: 5/7 Batch time: 0.7840
+     > Phase: validation Epoch: 25/30 Iter: 6/7 Batch time: 0.8048
+     > Phase: validation Epoch: 25/30 Iter: 7/7 Batch time: 0.2224
+     > Phase: validation   Epoch: 25/30 Loss: 0.1458 Acc: 1.0000        
+* Saving interim model while training: swgCQ_simIBMQLocal-at-epoch-25(30)-14072020172453.pth
+[[25.          0.97083333  0.19223628  1.          0.14358226]]
+     > Phase: train Epoch: 26/30 Iter: 1/31 Batch time: 13.5295
+     > Phase: train Epoch: 26/30 Iter: 2/31 Batch time: 13.5827
+     > Phase: train Epoch: 26/30 Iter: 3/31 Batch time: 13.4842
+     > Phase: train Epoch: 26/30 Iter: 4/31 Batch time: 13.5933
+     > Phase: train Epoch: 26/30 Iter: 5/31 Batch time: 13.5332
+     > Phase: train Epoch: 26/30 Iter: 6/31 Batch time: 13.5893
+     > Phase: train Epoch: 26/30 Iter: 7/31 Batch time: 13.5825
+     > Phase: train Epoch: 26/30 Iter: 8/31 Batch time: 13.6994
+     > Phase: train Epoch: 26/30 Iter: 9/31 Batch time: 13.5685
+     > Phase: train Epoch: 26/30 Iter: 10/31 Batch time: 13.8288
+     > Phase: train Epoch: 26/30 Iter: 11/31 Batch time: 13.5048
+     > Phase: train Epoch: 26/30 Iter: 12/31 Batch time: 13.9969
+     > Phase: train Epoch: 26/30 Iter: 13/31 Batch time: 13.6428
+     > Phase: train Epoch: 26/30 Iter: 14/31 Batch time: 14.1667
+     > Phase: train Epoch: 26/30 Iter: 15/31 Batch time: 15.1701
+     > Phase: train Epoch: 26/30 Iter: 16/31 Batch time: 15.4167
+     > Phase: train Epoch: 26/30 Iter: 17/31 Batch time: 15.2075
+     > Phase: train Epoch: 26/30 Iter: 18/31 Batch time: 15.0514
+     > Phase: train Epoch: 26/30 Iter: 19/31 Batch time: 15.1973
+     > Phase: train Epoch: 26/30 Iter: 20/31 Batch time: 15.0658
+     > Phase: train Epoch: 26/30 Iter: 21/31 Batch time: 15.0396
+     > Phase: train Epoch: 26/30 Iter: 22/31 Batch time: 15.1242
+     > Phase: train Epoch: 26/30 Iter: 23/31 Batch time: 14.9817
+     > Phase: train Epoch: 26/30 Iter: 24/31 Batch time: 15.1419
+     > Phase: train Epoch: 26/30 Iter: 25/31 Batch time: 15.0420
+     > Phase: train Epoch: 26/30 Iter: 26/31 Batch time: 15.1034
+     > Phase: train Epoch: 26/30 Iter: 27/31 Batch time: 15.2661
+     > Phase: train Epoch: 26/30 Iter: 28/31 Batch time: 15.2240
+     > Phase: train Epoch: 26/30 Iter: 29/31 Batch time: 15.2132
+     > Phase: train Epoch: 26/30 Iter: 30/31 Batch time: 15.0546
+     > Phase: train Epoch: 26/30 Loss: 0.2429 Acc: 0.9292        
+     > Phase: validation Epoch: 26/30 Iter: 1/7 Batch time: 0.9196
+     > Phase: validation Epoch: 26/30 Iter: 2/7 Batch time: 0.8757
+     > Phase: validation Epoch: 26/30 Iter: 3/7 Batch time: 0.8547
+     > Phase: validation Epoch: 26/30 Iter: 4/7 Batch time: 0.8637
+     > Phase: validation Epoch: 26/30 Iter: 5/7 Batch time: 0.8667
+     > Phase: validation Epoch: 26/30 Iter: 6/7 Batch time: 0.8846
+     > Phase: validation Epoch: 26/30 Iter: 7/7 Batch time: 0.2952
+     > Phase: validation   Epoch: 26/30 Loss: 0.1511 Acc: 1.0000        
+* Saving interim model while training: swgCQ_simIBMQLocal-at-epoch-26(30)-14072020172453.pth
+[[26.          0.97083333  0.19223628  1.          0.14358226]]
+     > Phase: train Epoch: 27/30 Iter: 1/31 Batch time: 16.0204
+     > Phase: train Epoch: 27/30 Iter: 2/31 Batch time: 15.3528
+     > Phase: train Epoch: 27/30 Iter: 3/31 Batch time: 15.0653
+     > Phase: train Epoch: 27/30 Iter: 4/31 Batch time: 15.2758
+     > Phase: train Epoch: 27/30 Iter: 5/31 Batch time: 15.0923
+     > Phase: train Epoch: 27/30 Iter: 6/31 Batch time: 15.1859
+     > Phase: train Epoch: 27/30 Iter: 7/31 Batch time: 14.9198
+     > Phase: train Epoch: 27/30 Iter: 8/31 Batch time: 15.1915
+     > Phase: train Epoch: 27/30 Iter: 9/31 Batch time: 15.0625
+     > Phase: train Epoch: 27/30 Iter: 10/31 Batch time: 15.0276
+     > Phase: train Epoch: 27/30 Iter: 11/31 Batch time: 15.1036
+     > Phase: train Epoch: 27/30 Iter: 12/31 Batch time: 15.1255
+     > Phase: train Epoch: 27/30 Iter: 13/31 Batch time: 15.3317
+     > Phase: train Epoch: 27/30 Iter: 14/31 Batch time: 15.2717
+     > Phase: train Epoch: 27/30 Iter: 15/31 Batch time: 15.3249
+     > Phase: train Epoch: 27/30 Iter: 16/31 Batch time: 15.2325
+     > Phase: train Epoch: 27/30 Iter: 17/31 Batch time: 15.2732
+     > Phase: train Epoch: 27/30 Iter: 18/31 Batch time: 15.2493
+     > Phase: train Epoch: 27/30 Iter: 19/31 Batch time: 15.0927
+     > Phase: train Epoch: 27/30 Iter: 20/31 Batch time: 15.1362
+     > Phase: train Epoch: 27/30 Iter: 21/31 Batch time: 15.8082
+     > Phase: train Epoch: 27/30 Iter: 22/31 Batch time: 14.6926
+     > Phase: train Epoch: 27/30 Iter: 23/31 Batch time: 13.6799
+     > Phase: train Epoch: 27/30 Iter: 24/31 Batch time: 13.7530
+     > Phase: train Epoch: 27/30 Iter: 25/31 Batch time: 13.4318
+     > Phase: train Epoch: 27/30 Iter: 26/31 Batch time: 13.6385
+     > Phase: train Epoch: 27/30 Iter: 27/31 Batch time: 13.5903
+     > Phase: train Epoch: 27/30 Iter: 28/31 Batch time: 13.6461
+     > Phase: train Epoch: 27/30 Iter: 29/31 Batch time: 13.5183
+     > Phase: train Epoch: 27/30 Iter: 30/31 Batch time: 13.6132
+     > Phase: train Epoch: 27/30 Loss: 0.2442 Acc: 0.9250        
+     > Phase: validation Epoch: 27/30 Iter: 1/7 Batch time: 0.8417
+     > Phase: validation Epoch: 27/30 Iter: 2/7 Batch time: 0.8042
+     > Phase: validation Epoch: 27/30 Iter: 3/7 Batch time: 0.8071
+     > Phase: validation Epoch: 27/30 Iter: 4/7 Batch time: 0.8468
+     > Phase: validation Epoch: 27/30 Iter: 5/7 Batch time: 0.8318
+     > Phase: validation Epoch: 27/30 Iter: 6/7 Batch time: 0.8048
+     > Phase: validation Epoch: 27/30 Iter: 7/7 Batch time: 0.2443
+     > Phase: validation   Epoch: 27/30 Loss: 0.1568 Acc: 1.0000        
+* Saving interim model while training: swgCQ_simIBMQLocal-at-epoch-27(30)-14072020172453.pth
+[[27.          0.97083333  0.19223628  1.          0.14358226]]
+     > Phase: train Epoch: 28/30 Iter: 1/31 Batch time: 13.6270
+     > Phase: train Epoch: 28/30 Iter: 2/31 Batch time: 13.5589
+     > Phase: train Epoch: 28/30 Iter: 3/31 Batch time: 13.4982
+     > Phase: train Epoch: 28/30 Iter: 4/31 Batch time: 13.5912
+     > Phase: train Epoch: 28/30 Iter: 5/31 Batch time: 13.4385
+     > Phase: train Epoch: 28/30 Iter: 6/31 Batch time: 13.4586
+     > Phase: train Epoch: 28/30 Iter: 7/31 Batch time: 13.5137
+     > Phase: train Epoch: 28/30 Iter: 8/31 Batch time: 13.6850
+     > Phase: train Epoch: 28/30 Iter: 9/31 Batch time: 13.5458
+     > Phase: train Epoch: 28/30 Iter: 10/31 Batch time: 13.5221
+     > Phase: train Epoch: 28/30 Iter: 11/31 Batch time: 13.5347
+     > Phase: train Epoch: 28/30 Iter: 12/31 Batch time: 14.3265
+     > Phase: train Epoch: 28/30 Iter: 13/31 Batch time: 13.4757
+     > Phase: train Epoch: 28/30 Iter: 14/31 Batch time: 13.5891
+     > Phase: train Epoch: 28/30 Iter: 15/31 Batch time: 13.5977
+     > Phase: train Epoch: 28/30 Iter: 16/31 Batch time: 13.7577
+     > Phase: train Epoch: 28/30 Iter: 17/31 Batch time: 14.9347
+     > Phase: train Epoch: 28/30 Iter: 18/31 Batch time: 14.2814
+     > Phase: train Epoch: 28/30 Iter: 19/31 Batch time: 13.6660
+     > Phase: train Epoch: 28/30 Iter: 20/31 Batch time: 13.6195
+     > Phase: train Epoch: 28/30 Iter: 21/31 Batch time: 13.5772
+     > Phase: train Epoch: 28/30 Iter: 22/31 Batch time: 13.5732
+     > Phase: train Epoch: 28/30 Iter: 23/31 Batch time: 13.7475
+     > Phase: train Epoch: 28/30 Iter: 24/31 Batch time: 13.7074
+     > Phase: train Epoch: 28/30 Iter: 25/31 Batch time: 13.7148
+     > Phase: train Epoch: 28/30 Iter: 26/31 Batch time: 13.5773
+     > Phase: train Epoch: 28/30 Iter: 27/31 Batch time: 13.6779
+     > Phase: train Epoch: 28/30 Iter: 28/31 Batch time: 13.7481
+     > Phase: train Epoch: 28/30 Iter: 29/31 Batch time: 13.6132
+     > Phase: train Epoch: 28/30 Iter: 30/31 Batch time: 13.7331
+     > Phase: train Epoch: 28/30 Loss: 0.1860 Acc: 0.9708        
+     > Phase: validation Epoch: 28/30 Iter: 1/7 Batch time: 0.8218
+     > Phase: validation Epoch: 28/30 Iter: 2/7 Batch time: 0.8423
+     > Phase: validation Epoch: 28/30 Iter: 3/7 Batch time: 0.8386
+     > Phase: validation Epoch: 28/30 Iter: 4/7 Batch time: 0.8040
+     > Phase: validation Epoch: 28/30 Iter: 5/7 Batch time: 0.7971
+     > Phase: validation Epoch: 28/30 Iter: 6/7 Batch time: 0.7990
+     > Phase: validation Epoch: 28/30 Iter: 7/7 Batch time: 0.2234
+     > Phase: validation   Epoch: 28/30 Loss: 0.1505 Acc: 1.0000        
+* Saving interim model while training: swgCQ_simIBMQLocal-at-epoch-28(30)-14072020172453.pth
+[[28.          0.97083333  0.18603694  1.          0.14358226]]
+     > Phase: train Epoch: 29/30 Iter: 1/31 Batch time: 13.8492
+     > Phase: train Epoch: 29/30 Iter: 2/31 Batch time: 13.5482
+     > Phase: train Epoch: 29/30 Iter: 3/31 Batch time: 14.7113
+     > Phase: train Epoch: 29/30 Iter: 4/31 Batch time: 13.6838
+     > Phase: train Epoch: 29/30 Iter: 5/31 Batch time: 14.6174
+     > Phase: train Epoch: 29/30 Iter: 6/31 Batch time: 14.5356
+     > Phase: train Epoch: 29/30 Iter: 7/31 Batch time: 13.6135
+     > Phase: train Epoch: 29/30 Iter: 8/31 Batch time: 13.8292
+     > Phase: train Epoch: 29/30 Iter: 9/31 Batch time: 13.6195
+     > Phase: train Epoch: 29/30 Iter: 10/31 Batch time: 13.5508
+     > Phase: train Epoch: 29/30 Iter: 11/31 Batch time: 13.4868
+     > Phase: train Epoch: 29/30 Iter: 12/31 Batch time: 13.5453
+     > Phase: train Epoch: 29/30 Iter: 13/31 Batch time: 13.4871
+     > Phase: train Epoch: 29/30 Iter: 14/31 Batch time: 13.5717
+     > Phase: train Epoch: 29/30 Iter: 15/31 Batch time: 13.3509
+     > Phase: train Epoch: 29/30 Iter: 16/31 Batch time: 13.6654
+     > Phase: train Epoch: 29/30 Iter: 17/31 Batch time: 13.4214
+     > Phase: train Epoch: 29/30 Iter: 18/31 Batch time: 13.5450
+     > Phase: train Epoch: 29/30 Iter: 19/31 Batch time: 13.6546
+     > Phase: train Epoch: 29/30 Iter: 20/31 Batch time: 13.4947
+     > Phase: train Epoch: 29/30 Iter: 21/31 Batch time: 13.5786
+     > Phase: train Epoch: 29/30 Iter: 22/31 Batch time: 13.5268
+     > Phase: train Epoch: 29/30 Iter: 23/31 Batch time: 13.5060
+     > Phase: train Epoch: 29/30 Iter: 24/31 Batch time: 13.7959
+     > Phase: train Epoch: 29/30 Iter: 25/31 Batch time: 13.9204
+     > Phase: train Epoch: 29/30 Iter: 26/31 Batch time: 13.5856
+     > Phase: train Epoch: 29/30 Iter: 27/31 Batch time: 13.6304
+     > Phase: train Epoch: 29/30 Iter: 28/31 Batch time: 14.4378
+     > Phase: train Epoch: 29/30 Iter: 29/31 Batch time: 15.2918
+     > Phase: train Epoch: 29/30 Iter: 30/31 Batch time: 15.1061
+     > Phase: train Epoch: 29/30 Loss: 0.2568 Acc: 0.9292        
+     > Phase: validation Epoch: 29/30 Iter: 1/7 Batch time: 0.8966
+     > Phase: validation Epoch: 29/30 Iter: 2/7 Batch time: 0.8527
+     > Phase: validation Epoch: 29/30 Iter: 3/7 Batch time: 0.8547
+     > Phase: validation Epoch: 29/30 Iter: 4/7 Batch time: 0.8810
+     > Phase: validation Epoch: 29/30 Iter: 5/7 Batch time: 0.8618
+     > Phase: validation Epoch: 29/30 Iter: 6/7 Batch time: 0.8755
+     > Phase: validation Epoch: 29/30 Iter: 7/7 Batch time: 0.2533
+     > Phase: validation   Epoch: 29/30 Loss: 0.1558 Acc: 1.0000        
+* Saving interim model while training: swgCQ_simIBMQLocal-at-epoch-29(30)-14072020172453.pth
+[[29.          0.97083333  0.18603694  1.          0.14358226]]
+     > Phase: train Epoch: 30/30 Iter: 1/31 Batch time: 15.5377
+     > Phase: train Epoch: 30/30 Iter: 2/31 Batch time: 15.1794
+     > Phase: train Epoch: 30/30 Iter: 3/31 Batch time: 15.0372
+     > Phase: train Epoch: 30/30 Iter: 4/31 Batch time: 15.2330
+     > Phase: train Epoch: 30/30 Iter: 5/31 Batch time: 15.0455
+     > Phase: train Epoch: 30/30 Iter: 6/31 Batch time: 15.1783
+     > Phase: train Epoch: 30/30 Iter: 7/31 Batch time: 14.9883
+     > Phase: train Epoch: 30/30 Iter: 8/31 Batch time: 15.1271
+     > Phase: train Epoch: 30/30 Iter: 9/31 Batch time: 14.9800
+     > Phase: train Epoch: 30/30 Iter: 10/31 Batch time: 15.0224
+     > Phase: train Epoch: 30/30 Iter: 11/31 Batch time: 15.0041
+     > Phase: train Epoch: 30/30 Iter: 12/31 Batch time: 15.0945
+     > Phase: train Epoch: 30/30 Iter: 13/31 Batch time: 14.9988
+     > Phase: train Epoch: 30/30 Iter: 14/31 Batch time: 15.3763
+     > Phase: train Epoch: 30/30 Iter: 15/31 Batch time: 15.5693
+     > Phase: train Epoch: 30/30 Iter: 16/31 Batch time: 15.3919
+     > Phase: train Epoch: 30/30 Iter: 17/31 Batch time: 15.3463
+     > Phase: train Epoch: 30/30 Iter: 18/31 Batch time: 15.1853
+     > Phase: train Epoch: 30/30 Iter: 19/31 Batch time: 15.4186
+     > Phase: train Epoch: 30/30 Iter: 20/31 Batch time: 15.1187
+     > Phase: train Epoch: 30/30 Iter: 21/31 Batch time: 15.1743
+     > Phase: train Epoch: 30/30 Iter: 22/31 Batch time: 14.9788
+     > Phase: train Epoch: 30/30 Iter: 23/31 Batch time: 15.0663
+     > Phase: train Epoch: 30/30 Iter: 24/31 Batch time: 16.3990
+     > Phase: train Epoch: 30/30 Iter: 25/31 Batch time: 15.2377
+     > Phase: train Epoch: 30/30 Iter: 26/31 Batch time: 15.5917
+     > Phase: train Epoch: 30/30 Iter: 27/31 Batch time: 14.3777
+     > Phase: train Epoch: 30/30 Iter: 28/31 Batch time: 13.5231
+     > Phase: train Epoch: 30/30 Iter: 29/31 Batch time: 13.4217
+     > Phase: train Epoch: 30/30 Iter: 30/31 Batch time: 13.4086
+     > Phase: train Epoch: 30/30 Loss: 0.1930 Acc: 0.9708        
+     > Phase: validation Epoch: 30/30 Iter: 1/7 Batch time: 0.7520
+     > Phase: validation Epoch: 30/30 Iter: 2/7 Batch time: 0.7939
+     > Phase: validation Epoch: 30/30 Iter: 3/7 Batch time: 0.8059
+     > Phase: validation Epoch: 30/30 Iter: 4/7 Batch time: 0.8501
+     > Phase: validation Epoch: 30/30 Iter: 5/7 Batch time: 0.7939
+     > Phase: validation Epoch: 30/30 Iter: 6/7 Batch time: 0.8668
+     > Phase: validation Epoch: 30/30 Iter: 7/7 Batch time: 0.2778
+     > Phase: validation   Epoch: 30/30 Loss: 0.1495 Acc: 1.0000        
+* Saving interim model while training: swgCQ_simIBMQLocal-at-epoch-30(30)-14072020172453.pth
+[[30.          0.97083333  0.18603694  1.          0.14358226]]
+* Saving train, val results (all epochs): 'epoch, best_acc_train, best_loss_train, best_acc, best_loss'
+  => Training completed in 219m 52s
+  => Best test loss: 0.1436 | Best test accuracy: 1.0000
+* (FINISH re-training the Quantum Layer).
+* Saving model:swgCQ_simIBMQLocal(30)-14072020172453.pth
+
+
+Training Summary for generated model: swgCQ_simIBMQLocal(30)-14072020172453.pth
+2020-07-14 21:04:47.852518
+Platform node: ASM-T480
++--------------+-------+------------+------------+-----------+------------+---------+----------+
+|  QC backend  | epoch | batch size | train time | train Acc | train Loss | val Acc | val Loss |
++--------------+-------+------------+------------+-----------+------------+---------+----------+
+| simIBMQLocal |   30  |     8      |  219m 52s  |   0.9708  |   0.1860   |  1.0000 |  0.1436  |
++--------------+-------+------------+------------+-----------+------------+---------+----------+
+[The modified neural network architecture]
+ResNet(
+  (conv1): Conv2d(3, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False)
+  (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+  (maxpool): MaxPool2d(kernel_size=3, stride=2, padding=1, dilation=1, ceil_mode=False)
+  (layer1): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (1): BasicBlock(
+      (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (layer2): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(64, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (downsample): Sequential(
+        (0): Conv2d(64, 128, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): BasicBlock(
+      (conv1): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (layer3): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(128, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (downsample): Sequential(
+        (0): Conv2d(128, 256, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): BasicBlock(
+      (conv1): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (layer4): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(256, 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (downsample): Sequential(
+        (0): Conv2d(256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): BasicBlock(
+      (conv1): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (avgpool): AdaptiveAvgPool2d(output_size=(1, 1))
+  (fc): DressedQuantumNet(
+    (pre_net): Linear(in_features=512, out_features=4, bias=True)
+    (post_net): Linear(in_features=4, out_features=2, bias=True)
+  )
+)
